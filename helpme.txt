@@ -509,6 +509,8 @@ Move root mount point to LVM:
   mount -t sysfs none /mnt/sys
   mount -t devpts none /mnt/dev/pts
  * chroot /new
+ * /etc/fstab
+ * /boot/grub/grub.cfg: see "root=" and set root=/dev/mapper/group-root
  * update-initramfs -u
  * update-grub
  * grub-install /dev/sda
