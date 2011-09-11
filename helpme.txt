@@ -502,6 +502,8 @@ How To Document and Organize Your C++ Code
  * names of private members of classes should end with '_'
 
 Move root mount point to LVM:
+http://www.sysresccd.org/Sysresccd-LVM-EN-Moving-the-linux-rootfs-to-an-LVM-volume
+http://superuser.com/questions/304115/ubuntu-moving-root-folder-to-a-new-lvm-partition
  * copy data... cp -ra
  * mount lvm root to /new
   mount --bind /dev/ /new/dev
