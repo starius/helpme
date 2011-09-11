@@ -20,7 +20,9 @@ etckeeper
 
 dpkg-reconfigure python-poker-network
 
-debsecan - анализ безопасности
+анализ безопасности
+    debsecan
+    tiger
 
 http://sovety.blogspot.com/2008/01/aptitude.html
 переустановить установленные пакеты, зависящие от питона, но не shedskin и не django
