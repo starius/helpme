@@ -1,0 +1,514 @@
+Уязвимости убунты:
+    настроить проводник Ubuntu (nautilus)
+        Права - Параметры
+        Просмотр в виде списка
+        Носители - отключить автозапуск и просмотр носителей
+
+    в /etc/udev!!! /lib/udev/rules.d/50-udev-default.rules -- MODE="0660"
+
+Как устаносить программы по умолчанию и убрать лишние из меню "Открыть с помощью"
+    Свойства файла - вкладка "Открывать с помощью"
+
+перенос настроек с одного компьютера на другой
+ http://otvety.google.ru/otvety/thread?tid=7b7e0aa5a63eb594
+  dpkg --get-selections >packages-list на компьютере, с которого переносите.
+  Затем полученный файл тащите на новую машину со свежеустановленной убунтой и
+  dpkg --set-selections <packages-list
+  apt-get dselect-upgrade
+
+etckeeper
+
+dpkg-reconfigure python-poker-network
+
+debsecan - анализ безопасности
+
+http://sovety.blogspot.com/2008/01/aptitude.html
+переустановить установленные пакеты, зависящие от питона, но не shedskin и не django
+sudo aptitude -f reinstall '~i~Dpython!~nshedskin'
+
+aptitude
+    http://algebraicthunk.net/~dburrows/projects/aptitude/doc/en/ch02s03s05.html
+    '~D^python$' -- зависящие от питона
+    '~R^python$' -- зависимости питона
+
+perror -- отпределяет название ошибки по номеру
+
+
+Сменить MAC-адрес:
+  ifconfig eth0 down
+  ifconfig eth0 hw ether 00:19:7e:53:8c:a3
+  ifconfig eth0 up
+    sudo ifconfig wlan0 down; sudo ifconfig wlan0 hw ether 00:21:19:4d:a0:ba; sudo ifconfig wlan0 up
+
+network-admin - тут можно поменять хост компьютера в локальной сети
+
+
+способ убить процессы по имени:
+  ps -A | grep app.wt | awk '{print $1}' | xargs kill
+
+обновить программы (менеджер обновлений):
+  /usr/bin/update-manager
+
+создать линк
+ln -s /cygdrive/c /c
+
+aircrack
+sing -- ip spoofing
+
+поменять юзеру шел shell:
+    usermod -s /sbin/nologin tom
+
+CheckInstall - контроль программ, установленных из исходников, создает пакет .deb
+easy-deb - создает пакет .deb из проекта python
+
+режимы процессора:
+    http://habrahabr.ru/blogs/linux/80914/#habracut
+    переключить режим процессора:
+         sudo cpufreq-set --min 800MHz --governor ondemand -c 0
+         sudo cpufreq-set --min 800MHz --governor ondemand -c 1
+    узнать:
+        cpufreq-info
+        cat /proc/acpi/processor/CPU0/limit
+        watch cat /proc/acpi/thermal_zone/*/temperature
+
+работа с портами:
+    lsof - список открытых файлов
+    lsof -tcp - список открытых портов
+    netstat - статистика соединений
+
+запустить простой файловый сервер:
+    python -m SimpleHTTPServer 8000
+
+nginx + php:
+http://till.klampaeckel.de/blog/archives/51-Ubuntu-nginx+php-cgi-on-a-socket.html
+
+Filezilla
+GuildFTPd
+
+poedit
+
+отключить модуль ядра kvm_intel (до перезагрузки):
+    rmmod kvm_intel
+
+редактировать обработку различных uri:
+    gconf-editor
+    /desktop/gnome/uri-handlers
+
+tar -c --exclude=*.ent GeometricalCore_v16 | gzip > 16.tar
+
+find -iname '*.mp3' > 1.m3u
+
+выполнить скрипт и открыть питон в интерактивном режиме
+    python -i file.py
+
+cp -a
+rsync -a
+rsync -e ssh --bwlimit=350 --progress -Lzuogthvrp --compress-level=9
+
+sqliteman - редактор для sqlite БД
+
+.po to .mo
+msgfmt [option] filename.po ...
+http://www.gnu.org/software/gettext/manual/gettext.html#msgfmt-Invocation
+
+django migrations
+http://code.google.com/p/django-evolution/
+
+обновить linux:
+sudo apt-get -y upgrade
+apt-get -y update
+apt-get -y upgrade или dist-upgrade
+sudo do-release-upgrade
+http://www.ubuntu.com/desktop/get-ubuntu/upgrade
+http://linuxway.ru/shag-za-shagom/kak-obnovit-ubuntu/
+
+kFourInLine - кваттрополи 4 крестики-нолики
+
+Скачать сайт или раздел сайта
+wget -r -k -p -np -e robots=off -E --no-check-certificate http://kodomo.fbb.msu.ru/wiki/Main/Python/
+-r              рекурсия
+-k              переправить пути для локального просмотра
+-p              загрузить все изображения и проч., необходимые для отображения HTML-страницы.
+-np             не подниматься в родительский каталог
+-e robots=off   забить на robots.txt и nofollow (чит)
+-nc, --no-clobber  пропускать загрузки, которые приведут к загрузке уже существующих файлов.
+-t 7 -w 5 --waitretry=14 --random-wait   подделка ожидания
+--no-check-certificate  не проверять правильность сертификата для https
+-E - решает проблему с индексными файлами
+-U - агент (браузер)
+    Mozilla/5.0 (X11; U; Linux i686; ru; rv:1.9.2.3) Gecko/20100423 Ubuntu/10.04 (lucid) Firefox/3.6.3
+
+computertemp. + добавить на панель гнома
+hddtemp
+powertop - контроль энергопотребления и подстройка для снжения температуры
+
+ограничить процент ЦП на процесс:
+    cpulimit -e apache2 -l 30
+
+FS:
+ * xfs for large files (avi)
+ * ext3/4/reiser -- a lot of small files
+ * ext3 is online resizable (good for /)
+Conclusion : To use the maximum of your partition capacity, choose ReiserFS, JFS or XFS.
+Conclusion : For quick FS creation and mounting/unmounting, choose JFS or XFS.
+Conclusion : For quick operations on large files, choose JFS or XFS. If you need to minimize CPU usage, prefer JFS.
+Conclusion : For quick operations on large file tree, choose Ext3 or XFS
+Conclusion : Results suggest that, for these tasks, filesystems can be regrouped as (a) quick and 
+    more CPU-intensive (ReiserFS and XFS) or (b) slower but less CPU-intensive (ext3 and JFS). XFS 
+    appears as a good compromise, with relatively quick results, moderate usage of CPU and acceptable 
+    rate of page faults.
+
+сделать geany стандартным текстовым редактором
+    в ~/.local/share/applications/defaults.list
+    добавляем строки
+        [Default Applications]
+        text/*=geany.desktop
+
+отключить ведение истории недавних документов:
+    $ rm ~/.recently-used.xbel
+    $ touch ~/.recently-used.xbel
+    $ sudo chattr +i ~/.recently-used.xbel
+
+    После этих команд нужно очистить список в меню. После этого этот пункт станет недоступным.
+    Если хотите вернуть эту функцию, то наберите это в терминале:
+
+    $ sudo chattr -i ~/.recently-used.xbel
+
+xkill - убить оконное приложение
+    можно на панель апплет "Принудительное завершение" добавить
+
+hamachi for linux
+http://dl.getdropbox.com/u/728854/hamachi-0.9.9.9-20_0.9.9.9-1_i386.deb
+hamachi-gui    hamachi-gui_0.9.5-0_i386-gutsy.deb
+
+alsamixer - звуковой микшер из-под командной строки
+нужно нажимать на М под "бегунками"
+
+localepurge -- удалить ненужные локализации из системы
+
+Anomos - анонимный bittorent
+
+cryptkeeper - шифрованные папки
+
+HEX - Шестнадцатиричный редактор
+
+Запись звонков skype
+http://itshaman.ru/articles/161/zapis-skype-razgovorov-v-linux
+ http://atdot.ch/scr/
+http://porpoisehead.net/hi/?q=node/23
+
+доустановить требуемые зависимости
+apt-get -f install
+
+gedit
+написание плагинов: http://live.gnome.org/Gedit/PythonPluginHowTo
+установка плагинов: http://habrahabr.ru/blogs/linux/50267/
+нормальный double-click: http://code.google.com/p/gedit-click-config/
+
+настройка bash
+http://system-administrators.info/?p=1248
+
+Подсказки при запуске неустановленных программ
+auto-apt
+
+mesg off
+запретить принимать write
+
+NTP - синхронизация времени
+установить приложение NTP
+Система - Администрирование - Дата и время - Конфигурация - Синхронизовать...
+apt-get install ntp
+
+Перерывы в работе. Бережем глаза
+Система- Параметры – Клавиатура - Перерыв в работе
+
+русские man
+sudo apt-get install manpages-ru
+
+Поддержка 3D шахмат
+sudo apt-get install python-opengl python-gtkglext1 libgtkglext1
+http://pyopengl.sourceforge.net/documentation/installation.html
+
+Запустить команду Att+F2 (в windows: win + R)
+
+темы в Gnome: http://art.gnome.org/themes
+тема W2k
+тема для кнопок: Wasp или Simple
+
+узнать занимаемый размер
+  du -sk /usr/*      размер подкаталогов в /usr
+  du -sh
+  du -c
+  du -shx | sort -h | tail
+
+таблица разделов / разбиений:
+  df -h
+  df -hTP
+
+Настройка sudo в debian
+/etc/sudoers
+user ALL=(ALL) ALL
+
+Preload: подгрузка памяти
+http://meandubuntu.ru/2009/11/preload-%D0%B8%D0%BB%D0%B8-%D1%83%D1%81%D0%BF%D0%BE%D1%80%D1%8F%D0%B5%D0%BC-%D0%B7%D0%B0%D0%BF%D1%83%D1%81%D0%BA-%D0%BF%D1%80%D0%BE%D0%B3%D1%80%D0%B0%D0%BC%D0%BC-%D0%B2-ubuntu-linux/
+sudo aptitude install preload
+
+Куб рабочего стола: CompizConfig
+лучше выбрать модуль Expo и рисование огнем
+
+tmpfs /tmp tmpfs defaults 0 0
+
+Ограничение использования памяти, количества процессов и т.д.:
+    /etc/security/limits.conf
+
+XEN - виртуальная машина без потерь
+
+убить процесс
+kill -s 9 <PID>
+killall python
+
+Vidalia
+TorK
+
+upx
+
+GtkHash
+
+Golly - Life
+
+VirtualBox общая папка
+mount -t vboxsf <FolderName> /home/test/obmen
+Пример: sudo mount -t vboxsf Portable /home/boris/Portable/
+Пример: sudo mount -t vboxsf DATA /D
+
+Автозапуск программ при старте системы:
+    Система - Параметры - Запускаемые приложения
+
+sudo apt-get install rar p7zip-full
+
+sudo dpkg --configure -a
+
+Установка dkms для установки virtualbox:
+sudo dpkg --configure -a
+sudo aptitude install dkms
+
+Вызвать Системный монитор по нажатии Ctrl-Alt_Del:
+    Система -> параметры -> Комбинации клавиш клавиатуры
+    Там жмешь клавишу добавить, вводишь любое имя,
+    а в графе команда пишешь "gnome-system-monitor",
+    применить, в самом конце списка находишь свою команду
+    и назначаешь любое сочетание клавиш, какое нужно.
+
+Запустить/остановить кабельный инет: cable-start / cable-stop
+Запустить DHCP: dhclient ath0, где ath0 - имя интерфейса
+
+Заставка:
+Система - Параметры - "Хранитель Экрана"
+
+Переименовать выделенный файл: F2
+
+wine
+PlayOnLinux
+
+Geany
+
+xampp
+http://vb.in-source.ru/
+sudo tasksel install lamp-server
+http://rotuka.com/2008/10/lamp-ubuntu-apache-mysql-php/
+
+> Ctrl-shift. переключение раскладки
+Дефолтные настройки для иксов теперь здесь:
+/etc/default/console-setup
+ищите параметры XKB*****
+
+eeePC - wifi
+http://linuxon1001p.blogspot.com/2010/03/fixing-wireless.html
+    auto modprobe startup
+    The file is /etc/modules.
+    You don't need to put in "sudo modprobe" before them
+
+# gpg --keyserver wwwkeys.eu.pgp.net --recv-keys 07DC563D1F41B907
+gpg: requesting key 1F41B907 from hkp server wwwkeys.eu.pgp.net
+gpg: /root/.gnupg/trustdb.gpg: trustdb created
+gpg: key 1F41B907: public key "Christian Marillat  " imported
+gpg: no ultimately trusted keys found
+gpg: Total number processed: 1
+gpg:               imported: 1
+#  gpg --armor --export 1F41B907 | apt-key add -
+
+sudo apt-key adv --recv-keys --keyserver keyserver.ubuntu.com КЛЮЧ
+
+Монтируем:
+    sudo mount -o loop /home/brun/iso.iso /media/cdrom0/
+Размонтируем:
+    sudo umount /media/cdrom0/
+автоматически пишем в /etc/fstab:
+    /dir1/dir2/file.iso /mnt/iso iso9660 ro,loop,auto,user 0 0
+
+sudo users-admin
+
+iwlist wlan scan
+iwconfig $wlan mode Ad-Hoc essid netsukuku
+
+сервер
+    auto usb-wifi
+    iface usb-wifi inet static
+            address 10.255.255.1
+            netmask 255.255.255.240
+            wireless-essid MyHome
+            wireless-mode ad-hoc
+            wireless-key open [1] 1234567890
+клиент:
+    auto usb-wifi
+    iface usb-wifi inet dhcp
+            wireless-essid MyHome
+            wireless-mode ad-hoc
+            wireless-key open [1] 1234567890
+
+File associations:
+    1.) /usr/share/applications/defaults.list
+    -- This method is perhaps one of the most important. Following this comes..
+
+    2.) /usr/share/applications/mimeinfo.cache
+    -- This is the cache of the current mime types.
+    Updating the mime database doesn't work to well so of course you have to manually edit this as well.
+
+    3.) ~/.local/share/applications/
+    -- The dreaded "Open With"
+
+    4.) ~/.gnome/share/apps/
+    -- Same as the above
+
+Добавить индикатор раскладки клавиатуры:
+правый щелчок мышью по верхней панели - добавить панель
+
+Установка пакетов
+sudo apt-get install openssl-devel
+
+Менеджер пакетов: dpkg
+дружественный: dselect
+
+aptitude -F '%I %p %V %v' -O installsize search ~i
+
+Сетевые протоколы
+Прикладной уровень  HTTP, SMTP, SSH, SNMP, FTP, NNTP, NTP, LDAP, ...
+Сеансовый уровень   TLS, SSL, RPC, WSP...
+Транспортный уровень    TCP, UDP, SCTP, ICMP, OSPF, RSVP, VRRP, RTP, DCCP ...
+Сетевой уровень IPv4, IPv6, ARP, RARP, MPLS, IPX ...
+Канальный уровень   Ethernet, 802.11, xDSL, Fibre Channel, FDDI, ATM, ISDN ...
+
+passwords:
+gpw
+pwqgen
+pwgen
+
+#!/bin/bash
+read -p "Username: " uname
+stty -echo
+read -p "Password: " passw; echo
+stty echo
+
+learn password:
+stty -echo; read -p "P: " ppp; stty echo; echo $ppp|md5sum
+
+shred -- fully delete file
+
+sudo ntpdate europe.pool.ntp.org
+
+update-alternatives --install /usr/bin/g++ g++ /usr/bin/g++-4.5 20
+
+открытые порты: netstat -lpn
+
+pm-suspend
+
+valgrind --callgrind to see what is taking CPU
+
+За это отвечает параметр swapinnes, чем он больше, тем чаще система пишет в своп, по дефолту - 60, пределы 
+изменения - от 0 до 100. Не помню правда, что это за попугаи, но не критично думаю =)
+можно изменить так
+echo 10 > /proc/sys/vm/swappiness
+или прописать в sysctl.conf
+vm.swappiness=10
+
+gdb: catch throw
+
+nginx
+    server_name_in_redirect off;
+
+Linux:   for fname in *.jpg; do mogrify -resize 640 $fname; done
+Windows: for %fname in (*.jpg) do mogrify -resize 640 %fname;
+
+Удалить все desktop.ini в вложенных папках
+find -name '*desktop.ini' -exec rm "{}" \;
+
+Удалить дупликаты
+fdupes -r . -Nd
+
+vmstat 1
+
+df -hTP
+
+vim
+    :%!fold -s -w 80
+    set ve=all
+
+find . -type d -exec chmod 755 {} \;
+
+add-apt-repository ppa:dtl131/ppa
+ppa-purge ppa:dtl131/ppa
+
+cp -a -- preserve all (for filesystem move)
+
+One fs mode:
+ * tar --one-file-system
+ * du -x        du --one-file-system
+ * cp -x        cp --one-file-system
+ * find -xdev   find -mount
+
+stty -echo; read -p "enter: " p; echo $p | md5sum; stty echo;
+
+echo Привет |mail -s "test mail sent to external" bnagaev@gmail.com
+
+grep reread -A 5 -B 5 -r . -n --color=always|less -R
+ * -i ignore case
+ * -v inverted
+ * -A, -B after, before
+ * \< \> inside pattern: word boundaries
+
+If you do not choose an inheritance type, C++ defaults to private inheritance
+
+dpkg -L aptitude -- list of files of aptitude package
+dpkg-query -S /usr/bin/bash -- search for package containing the file
+
+syntek webcam
+http://doc.ubuntu-fr.org/syntek
+
+mplayer:
+    subtitles:
+    add to ~/.mplayer/config: (not in gnome-mplayer section only)
+        vf=screenshot
+    then press s while watching
+
+    -ss 17:10
+
+    mplayer -nocache -framedrop -vfm ffmpeg -lavdopts lowres=1:fast:skiploopfilter=all -nobps -ni -forceidx -mc 0
+
+How To Document and Organize Your C++ Code
+ * http://www.edparrish.com/common/cppdoc.html
+ * vars and funcs: lower case letters and underbars ('_') as separators
+ * names of private members of classes should end with '_'
+
+Move root mount point to LVM:
+ * copy data... cp -ra
+ * mount lvm root to /new
+  mount --bind /dev/ /new/dev
+  mount -t proc none /mnt/proc
+  mount -t sysfs none /mnt/sys
+  mount -t devpts none /mnt/dev/pts
+ * chroot /new
+ * update-initramfs -u
+ * update-grub
+ * grub-install /dev/sda
+ * /etc/initramfs-tools/conf.d/resume: swap location for resume from hibernate
+
