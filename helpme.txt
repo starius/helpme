@@ -512,3 +512,7 @@ Move root mount point to LVM:
  * grub-install /dev/sda
  * /etc/initramfs-tools/conf.d/resume: swap location for resume from hibernate
 
+haskell:
+ * http://www.haskell.org/haskellwiki/Learn_Haskell_in_10_minutes
+ * http://learnyouahaskell.com/
+
