@@ -523,3 +523,11 @@ haskell:
  * http://www.haskell.org/haskellwiki/Learn_Haskell_in_10_minutes
  * http://learnyouahaskell.com/
 
+Change grub colors and background:
+ * edit /etc/grub.d/05_debian_theme
+ * comment /usr/share/desktop-base/grub_background.sh
+ * specify variables from /usr/share/desktop-base/grub_background.sh
+ * update-grub
+
+Mouse -> Touchpad -> Disable mouse when typing
+
