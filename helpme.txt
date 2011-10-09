@@ -531,3 +531,11 @@ Change grub colors and background:
 
 Mouse -> Touchpad -> Disable mouse when typing
 
+How to install testing packages on debian stable with apt-get
+    -create or modify the /etc/apt/apt.conf file and make it contain the following line:
+        APT::Default-Release "stable";
+    -modify the /etc/apt/sources.list file: copy all the lines containing stable, and replace the stable by testing.
+    -run apt-get update to update the list of installable packages.
+    -if you want to install the package foo that is present in the testing sources, use the following command:
+        apt-get -t testing install foo
+
