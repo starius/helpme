@@ -539,3 +539,8 @@ How to install testing packages on debian stable with apt-get
     -if you want to install the package foo that is present in the testing sources, use the following command:
         apt-get -t testing install foo
 
+ATI non-free:
+    # aptitude -r install linux-headers-2.6-$(uname -r|sed 's,[^-]*-[^-]*-,,') fglrx-control fglrx-driver
+    # aticonfig aptitude --initial
+    see /etc/X11/xorg.conf
+
