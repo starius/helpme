@@ -554,3 +554,9 @@ Copy apt cache to another computer:
  * dpkg --get-selections | scp | dpkg --set-selections
  * apt-get dselect-upgrade
 
+GPU:
+ * glxinfo | grep renderer
+ * cat /var/log/XFree86.0.log | grep "GPU detected"
+ * /sbin/lspci | grep VGA
+ * cat /proc/pci | grep VGA
+
