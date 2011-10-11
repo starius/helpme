@@ -544,3 +544,13 @@ ATI non-free:
     # aticonfig aptitude --initial
     see /etc/X11/xorg.conf
 
+Copy apt cache to another computer:
+ * create dvd iso with aptoncd
+ * copy is file
+ * mount it
+ * add it to apt sources (e.g. using software sorces)
+    deb cdrom:[APTonCD for   - i386 (2011-10-11 23:23) DVD1]/ /
+ * comment all other entries in /etc/apt/sources.list
+ * dpkg --get-selections | scp | dpkg --set-selections
+ * apt-get dselect-upgrade
+
