@@ -560,3 +560,7 @@ GPU:
  * /sbin/lspci | grep VGA
  * cat /proc/pci | grep VGA
 
+Copy NetworkManager settings, connections and wireless passwords:
+ * ~/.gconf/system/networking
+ * ~/.gnome2/keyrings
+
