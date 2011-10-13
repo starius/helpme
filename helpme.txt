@@ -564,3 +564,11 @@ Copy NetworkManager settings, connections and wireless passwords:
  * ~/.gconf/system/networking
  * ~/.gnome2/keyrings
 
+Have you ever wanted to share an internet connection in Ubuntu?
+ * Install dnsmasq on your computer. (On Ubuntu, you will want to install the dnsmasq-base package.)
+ * Make sure your WAN connection is all configured (e.g. with DHCP or a static address) and working.
+ * For your LAN interface (which might be a second network card or a wireless card),
+   select “Shared to other computers” in the IPv4 Settings tab.
+(This article is based on http://www.netdip.com/ubuntu-internet-connection-sharing-9f/
+and appears here under a Creative Commons Attribution-Share Alike 3.0 License)
+
