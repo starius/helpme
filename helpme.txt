@@ -496,6 +496,7 @@ mplayer:
     -ss 17:10
 
     mplayer -nocache -framedrop -vfm ffmpeg -lavdopts lowres=1:fast:skiploopfilter=all -nobps -ni -forceidx -mc 0
+    choose audio device: mplayer Lost-3,07.avi -ao alsa:device=hw=1.0
 
 How To Document and Organize Your C++ Code
  * http://www.edparrish.com/common/cppdoc.html
