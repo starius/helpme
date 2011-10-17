@@ -33,6 +33,8 @@ aptitude
     '~D^python$' -- зависящие от питона
     '~R^python$' -- зависимости питона
     ~M           -- automatically installed
+    keep-all -- Cancels all scheduled actions on all packages
+    forget-new -- Forgets all internal information about what packages are “new”
 
 perror -- отпределяет название ошибки по номеру
 
