@@ -560,7 +560,7 @@ Copy apt cache to another computer:
 GPU:
  * glxinfo | grep renderer
  * cat /var/log/XFree86.0.log | grep "GPU detected"
- * /sbin/lspci | grep VGA
+ * /sbin/lspci -v | grep VGA
  * cat /proc/pci | grep VGA
 
 Copy NetworkManager settings, connections and wireless passwords:
