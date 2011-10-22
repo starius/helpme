@@ -575,3 +575,11 @@ Have you ever wanted to share an internet connection in Ubuntu?
 (This article is based on http://www.netdip.com/ubuntu-internet-connection-sharing-9f/
 and appears here under a Creative Commons Attribution-Share Alike 3.0 License)
 
+pidgin gtalk:
+http://blog.paulbetts.org/index.php/2007/07/13/connection-errors-in-pidgin-with-gtalk/
+Basically, go to the advanced tab and set
+ * Force old (port 5223) SSL
+ * Connect port: 443
+ * Connect server: talk.google.com
+ * Use global proxy
+
