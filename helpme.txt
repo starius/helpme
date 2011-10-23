@@ -583,3 +583,5 @@ Basically, go to the advanced tab and set
  * Connect server: talk.google.com
  * Use global proxy
 
+genisoimage -o my_image.iso my_directory
+
