@@ -592,4 +592,6 @@ Encrypted (LVM) volumes:
      y /dev/group/x none luks
  * /etc/fstab
  * reboot or mount
+ * cryptsetup luksAddKey <device>  --   add  a  new  key file/passphrase.
+ * cryptsetup luksRemoveKey <device>  --   remove supplied key or key file
 
