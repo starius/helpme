@@ -585,3 +585,11 @@ Basically, go to the advanced tab and set
 
 genisoimage -o my_image.iso my_directory
 
+Encrypted (LVM) volumes:
+ * cryptsetup luksFormat /dev/group/x
+ * cryptsetup luksOpen /dev/group/x y  ==> device /dev/mapper/y should be created
+ * /etc/crypttab:
+     y /dev/group/x none luks
+ * /etc/fstab
+ * reboot or mount
+
