@@ -595,3 +595,7 @@ Encrypted (LVM) volumes:
  * cryptsetup luksAddKey <device>  --   add  a  new  key file/passphrase.
  * cryptsetup luksRemoveKey <device>  --   remove supplied key or key file
 
+Backup MBR with dd command:
+ * backup: sfdisk -d /dev/sdX > backup-sdX.sf
+ * restore: sfdisk /dev/sdX < backup-sdX.sf
+
