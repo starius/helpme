@@ -35,6 +35,7 @@ aptitude
     ~M           -- automatically installed
     keep-all -- Cancels all scheduled actions on all packages
     forget-new -- Forgets all internal information about what packages are “new”
+    (un)markauto -- Mark packages as automatically installed or manually installed
 
 perror -- отпределяет название ошибки по номеру
 
