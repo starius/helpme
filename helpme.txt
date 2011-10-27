@@ -600,3 +600,5 @@ Backup MBR with dd command:
  * backup: sfdisk -d /dev/sdX > backup-sdX.sf
  * restore: sfdisk /dev/sdX < backup-sdX.sf
 
+sudo update-flashplugin-nonfree --install
+
