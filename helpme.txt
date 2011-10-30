@@ -631,3 +631,9 @@ http://forums.debian.net/viewtopic.php?t=12497
 Generate sftp pub key from ssh pub key:
  $ ssh-keygen -e
 
+nvidia installer debian:
+http://gosha.me/node/126
+ * apt-get install build-essential libc6-dev linux-headers-$(uname -r)
+ * stop X
+ * CC=gcc-4.3 ./nvidia-installer.bin
+
