@@ -628,3 +628,6 @@ http://forums.debian.net/viewtopic.php?t=12497
         type pulse
     }
 
+Generate sftp pub key from ssh pub key:
+ $ ssh-keygen -e
+
