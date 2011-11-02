@@ -637,3 +637,8 @@ http://gosha.me/node/126
  * stop X
  * CC=gcc-4.3 ./nvidia-installer.bin
 
+Hide user from login screen:
+ * /etc/gdm3/daemon.conf
+ [greeter]
+ Exclude=nobody,admin,reception
+
