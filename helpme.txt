@@ -590,6 +590,7 @@ Basically, go to the advanced tab and set
  * Use global proxy
 
 genisoimage -o my_image.iso my_directory
+    -U Allow Untranslated filenames
 
 Encrypted (LVM) volumes:
  * cryptsetup luksFormat /dev/group/x
