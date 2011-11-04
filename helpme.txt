@@ -159,9 +159,9 @@ Conclusion : To use the maximum of your partition capacity, choose ReiserFS, JFS
 Conclusion : For quick FS creation and mounting/unmounting, choose JFS or XFS.
 Conclusion : For quick operations on large files, choose JFS or XFS. If you need to minimize CPU usage, prefer JFS.
 Conclusion : For quick operations on large file tree, choose Ext3 or XFS
-Conclusion : Results suggest that, for these tasks, filesystems can be regrouped as (a) quick and 
-    more CPU-intensive (ReiserFS and XFS) or (b) slower but less CPU-intensive (ext3 and JFS). XFS 
-    appears as a good compromise, with relatively quick results, moderate usage of CPU and acceptable 
+Conclusion : Results suggest that, for these tasks, filesystems can be regrouped as (a) quick and
+    more CPU-intensive (ReiserFS and XFS) or (b) slower but less CPU-intensive (ext3 and JFS). XFS
+    appears as a good compromise, with relatively quick results, moderate usage of CPU and acceptable
     rate of page faults.
 
 сделать geany стандартным текстовым редактором
@@ -430,8 +430,10 @@ pm-suspend
 
 valgrind --callgrind to see what is taking CPU
 
-За это отвечает параметр swapinnes, чем он больше, тем чаще система пишет в своп, по дефолту - 60, пределы 
-изменения - от 0 до 100. Не помню правда, что это за попугаи, но не критично думаю =)
+За это отвечает параметр swapinnes, чем он больше,
+тем чаще система пишет в своп,
+по дефолту - 60, пределы изменения - от 0 до 100.
+Не помню правда, что это за попугаи, но не критично думаю =)
 можно изменить так
 echo 10 > /proc/sys/vm/swappiness
 или прописать в sysctl.conf
