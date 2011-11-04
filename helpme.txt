@@ -642,3 +642,17 @@ Hide user from login screen:
  [greeter]
  Exclude=nobody,admin,reception
 
+nrg <-> iso:
+http://www.opennet.ru/tips/info/1819.shtml
+ * nrg to iso:
+    $ dd bs=1k if=image.nrg of=image.iso skip=300
+ * iso to nrg:
+    $ dd if=/dev/zero of=image.nrg bs=1k count=300
+    $ cat image.iso >> image.nrg
+ * burn nrg to CD:
+    $ dd if=image.nrg of=image.iso bs=1k skip=300 | cdrecord speed=2 -
+ * mount nrg:
+    $ mount image.nrg /path -o offset=$((1024*300))
+        or
+    $ fuseiso -p image.nrg mnt_dir
+
