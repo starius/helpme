@@ -658,3 +658,6 @@ http://www.opennet.ru/tips/info/1819.shtml
         or
     $ fuseiso -p image.nrg mnt_dir
 
+Static, Shared Dynamic and Loadable Linux Libraries:
+http://www.yolinux.com/TUTORIALS/LibraryArchives-StaticAndDynamic.html
+
