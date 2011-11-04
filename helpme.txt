@@ -37,6 +37,8 @@ aptitude
     forget-new -- Forgets all internal information about what packages are “new”
     (un)markauto -- Mark packages as automatically installed or manually installed
 
+dpkg --ignore-depends=libgcc1 -i gcc-4.3.deb
+
 perror -- отпределяет название ошибки по номеру
 
 
