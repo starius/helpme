@@ -667,3 +667,21 @@ http://www.yolinux.com/TUTORIALS/LibraryArchives-StaticAndDynamic.html
 If you want to link libapplejuice statically, but not liborangejuice:
 gcc *.o -Wl,-Bstatic -lapplejuice -Wl,-Bdynamic -lorangejuice -o binary
 
+http://www.gnupg.org/gph/en/manual.html
+ * gpg --gen-key
+ * gpg --fingerprint
+   Output:   pub   4096R/<HERE_IS_KEY_SPECIFIER> 2011-11-10 ...
+ * --armor = generate ascii-wrapped files
+ * gpg --output output_priveta_file --gen-revoke key-specifier
+   If the --output option is omitted, the result will be placed on stdout
+   key-specifier: email or string from output of gpg --fingerprint
+ * Exporting a public key:
+   gpg --output alice.gpg --armor --export
+ * gpg --import alice.gpg
+ * Sign:
+  * --detach-sig file (sign only) (--verify to verify)
+  * --clearsign file (readable file with sign) (--decrypt to verify and decrypt)
+  * --sign file (unreadable file with sign) (--decrypt to verify and decrypt)
+ * gpg --recv-key 0xBB7576AC
+ * gpg --send-key blake@cyb.org
+
