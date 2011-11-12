@@ -685,3 +685,9 @@ http://www.gnupg.org/gph/en/manual.html
  * gpg --recv-key 0xBB7576AC
  * gpg --send-key blake@cyb.org
 
+create debian packages:
+ * http://wiki.debian.org/HowToPackageForDebian
+ * http://habrahabr.ru/blogs/linux/78094/
+ * http://habrahabr.ru/blogs/linux/78086/
+ * http://habrahabr.ru/blogs/ubuntu/72633/
+
