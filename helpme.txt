@@ -697,3 +697,13 @@ cheat system time inside virtualbox:
  * Guest:
     # date MMDDhhmm
 
+reverse engineering:
+ * EDB: http://www.codef00.com/projects#edisassm
+ * debuggers: http://forum.antichat.ru/thread44833.html
+ * objdump:
+  * -D    decompile
+  * -s    show ascii too (helpful when looking for string address)
+  * List called functions addresses:
+    objdump -D 1.exe | grep '\<call'|gawk '{print $8}' |grep 0x|sort|uniq
+ * bbe
+
