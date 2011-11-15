@@ -707,3 +707,15 @@ reverse engineering:
     objdump -D 1.exe | grep '\<call'|gawk '{print $8}' |grep 0x|sort|uniq
  * bbe
 
+keylogger:
+http://code.google.com/p/logkeys/wiki/Documentation#Usage_how-to
+ * install logkeys
+ * As root, for each existing device eventX in /dev/input/, where X is a number:
+  # cat /dev/input/eventX
+  then type some arbitrary characters.
+  If you see any output, that is the device to be used.
+  If you don't see any output, press Ctrl+C and continue with the next device.
+ * edit /etc/default/logkeys:
+   ENABLED=1
+   DEVICE=/dev/input/eventX
+
