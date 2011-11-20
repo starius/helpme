@@ -514,7 +514,7 @@ Not to forgen:
  * use boost::polymorphic_downcast
  * boost static assert
 
-Move root mount point to LVM:
+Move root mount point to LVM (luks):
 http://www.sysresccd.org/Sysresccd-LVM-EN-Moving-the-linux-rootfs-to-an-LVM-volume
 http://superuser.com/questions/304115/ubuntu-moving-root-folder-to-a-new-lvm-partition
  * copy data... cp -ra
@@ -525,6 +525,7 @@ http://superuser.com/questions/304115/ubuntu-moving-root-folder-to-a-new-lvm-par
   mount -t devpts none /mnt/dev/pts
  * chroot /new
  * /etc/fstab
+ * [ /etc/crypttab ]
  * /boot/grub/grub.cfg: see "root=" and set root=/dev/mapper/group-root
  * update-initramfs -u
  * update-grub
