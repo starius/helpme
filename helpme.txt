@@ -518,12 +518,12 @@ Move root mount point to LVM (luks):
 http://www.sysresccd.org/Sysresccd-LVM-EN-Moving-the-linux-rootfs-to-an-LVM-volume
 http://superuser.com/questions/304115/ubuntu-moving-root-folder-to-a-new-lvm-partition
  * copy data... cp -ra
- * mount lvm root to /new
-  mount --bind /dev/ /new/dev
-  mount -t proc none /mnt/proc
-  mount -t sysfs none /mnt/sys
-  mount -t devpts none /mnt/dev/pts
- * chroot /new
+ * mount lvm root to /tmp/new
+  mount --bind /dev/ /tmp/new/dev
+  mount -t proc none /tmp/new/proc
+  mount -t sysfs none /tmp/new/sys
+  mount -t devpts none /tmp/new/dev/pts
+ * chroot /tmp/netmp/new
  * /etc/fstab
  * [ /etc/crypttab ]
  * /boot/grub/grub.cfg: see "root=" and set root=/dev/mapper/group-root
