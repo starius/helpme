@@ -601,6 +601,8 @@ Encrypted (LVM) volumes:
  * cryptsetup luksOpen /dev/group/x y  ==> device /dev/mapper/y should be created
  * /etc/crypttab:
      y /dev/group/x none luks
+     cswap /dev/sda6 /dev/urandom swap
+     (example from `man crypttab')
  * /etc/fstab
  * reboot or mount
  * cryptsetup luksAddKey <device>  --   add  a  new  key file/passphrase.
