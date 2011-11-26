@@ -695,6 +695,8 @@ create debian packages:
  * http://habrahabr.ru/blogs/linux/78094/
  * http://habrahabr.ru/blogs/linux/78086/
  * http://habrahabr.ru/blogs/ubuntu/72633/
+ $ ispell -d american -g debian/control
+ $ aspell -d en -D -c debian/control
 
 cheat system time inside virtualbox:
  * Host:
