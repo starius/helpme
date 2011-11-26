@@ -690,6 +690,7 @@ http://www.gnupg.org/gph/en/manual.html
  * gpg --send-key blake@cyb.org
 
 create debian packages:
+ * https://wiki.ubuntu.com/PackagingGuide/Complete
  * http://wiki.debian.org/HowToPackageForDebian
  * http://habrahabr.ru/blogs/linux/78094/
  * http://habrahabr.ru/blogs/linux/78086/
