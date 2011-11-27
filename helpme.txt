@@ -740,3 +740,7 @@ Turn display off/on:
  # sudo vbetool dpms off
  # sudo vbetool dpms on
 
+Lock and unlock screen (gnome):
+ $ gnome-screensaver-command -l
+ $ gnome-screensaver-command -d
+
