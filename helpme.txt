@@ -736,3 +736,7 @@ network audio system + mplayer + ssh:
  * on "master" machine:
    $ AUDIOSERVER=tcp/127.0.0.1:8008 mplayer -ao nas 123.avi
 
+Turn display off/on:
+ # sudo vbetool dpms off
+ # sudo vbetool dpms on
+
