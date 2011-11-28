@@ -771,6 +771,9 @@ Lock and unlock screen (gnome):
  $ gnome-screensaver-command -l
  $ gnome-screensaver-command -d
 
+Linux live usb - rescue mode:
+Add option "rescue/enable=true"
+
 Setting up Windows XP to map files with an ssh tunnel:
 http://www.damtp.cam.ac.uk/user/jp107/xp-remote/ssh-map/
 
