@@ -16,6 +16,21 @@
   dpkg --set-selections <packages-list
   apt-get dselect-upgrade
 
+After installation:
+ * Ctrl + Alt + T => gnome-terminal --working-directory=~
+ * terminal:
+  * do not show menubar by default in new terminals
+  * do not show scrollbar
+ * power management:
+  * do not spin off
+  * laptop lid is closed => Blackscreen
+ * mouse - touchpad
+  * enable mouse clicks with touchpad
+  * two-finger scrolling
+ * keyboard - layouts:
+  * add Russian
+  * switch language: Shift + Ctrl
+
 etckeeper
 
 dpkg-reconfigure python-poker-network
