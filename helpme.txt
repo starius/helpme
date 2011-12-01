@@ -715,6 +715,10 @@ http://www.gnupg.org/gph/en/manual.html
   * --sign file (unreadable file with sign) (--decrypt to verify and decrypt)
  * gpg --recv-key 0xBB7576AC
  * gpg --send-key blake@cyb.org
+ * to export your secret keys, use:
+    gpg --export-secret-key -a > secret.key
+   and to import them again:
+    gpg --import secret.key
 
 create debian packages:
  * https://wiki.ubuntu.com/PackagingGuide/Complete
