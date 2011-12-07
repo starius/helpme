@@ -771,3 +771,6 @@ Lock and unlock screen (gnome):
  $ gnome-screensaver-command -l
  $ gnome-screensaver-command -d
 
+Setting up Windows XP to map files with an ssh tunnel:
+http://www.damtp.cam.ac.uk/user/jp107/xp-remote/ssh-map/
+
