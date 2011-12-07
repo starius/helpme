@@ -1,0 +1,13 @@
+Ищем все экземпляры токена в тексте
+
+result = re.finditer( ur"{[^}\n]+}", txt )
+for match in result :
+  print match.group()
+
+
+
+import re
+length_hit = re.search(r"Length: ?(\d+)", str) # one
+                finditer                       # all
+alignment_length = length_hit.groups()[0] # \d
+alignment_length = length_hit.group() # Length: ?(\d+)
