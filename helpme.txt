@@ -783,3 +783,6 @@ http://www.cyberciti.biz/tips/delete-leading-spaces-from-front-of-each-word.html
 
 unoconv: converter between OpenOffice.org document formats
 
+Get aspell word list dictionary:
+$ aspell -l ru dump master
+
