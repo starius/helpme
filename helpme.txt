@@ -781,3 +781,5 @@ To delete trailing whitespace from end of each line, enter:
 $ cat input.txt | sed 's/[ \t]*$//' > output.txt
 http://www.cyberciti.biz/tips/delete-leading-spaces-from-front-of-each-word.html
 
+unoconv: converter between OpenOffice.org document formats
+
