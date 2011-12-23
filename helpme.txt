@@ -666,6 +666,11 @@ http://forums.debian.net/viewtopic.php?t=12497
 
 Generate sftp pub key from ssh pub key:
  $ ssh-keygen -e
+Change passphrase of the ssh private key:
+ $ ssh-keygen -p
+ssh-agent + tmux:
+ $ ssh-agent tmux
+ $ ssh-add         [inside tmux]
 
 nvidia installer debian:
 http://gosha.me/node/126
