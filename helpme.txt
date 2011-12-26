@@ -794,3 +794,20 @@ unoconv: converter between OpenOffice.org document formats
 Get aspell word list dictionary:
 $ aspell -l ru dump master
 
+OpenArena:
+ * ~/.openarena/baseoa/q3config.cfg
+If you want all your games to be recorded, each in its own file,
+use this command, which will make a persistent setting:
+ * /seta cl_autoRecordDemo 1
+ * play a demo: \demo <name>
+ * increase slot nymber: \sv_maxclients 500
+ * \map_restart
+ * /team - Makes you join the game or spectate
+ * \team r - enters the game in the red team
+When you are spectating, if you press "ATTACK" button (usually, left
+mouse click), you begin "follow" spectate mode (seeing in first
+person for the point of view of another player), and clicking again
+you cycle between players. If you pres "USE_ITEM" (ENTER key by
+default), you switch to "free" spectate mode again (your "virtual
+camera" can "fly" around the arena as you wish).
+
