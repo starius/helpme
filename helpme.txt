@@ -811,3 +811,6 @@ you cycle between players. If you pres "USE_ITEM" (ENTER key by
 default), you switch to "free" spectate mode again (your "virtual
 camera" can "fly" around the arena as you wish).
 
+distcc: a fast, free distributed C/C++ compiler
+DISTCC_HOSTS='localhost @f3sa.local @netbook.local' make 'CXX=distcc' -j 9 build
+
