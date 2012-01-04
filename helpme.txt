@@ -814,3 +814,5 @@ camera" can "fly" around the arena as you wish).
 distcc: a fast, free distributed C/C++ compiler
 DISTCC_HOSTS='localhost @f3sa.local @netbook.local' make 'CXX=distcc' -j 9 build
 
+sudo alsa force-reload
+
