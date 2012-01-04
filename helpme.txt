@@ -548,6 +548,7 @@ http://superuser.com/questions/304115/ubuntu-moving-root-folder-to-a-new-lvm-par
  * update-grub
  * grub-install /dev/sda
  * /etc/initramfs-tools/conf.d/resume: swap location for resume from hibernate
+   /dev/mapper/<vg>/<lv>    !!! not UUID=... or /dev/<vg>/<lv>
 
 haskell:
  * http://www.haskell.org/haskellwiki/Learn_Haskell_in_10_minutes
