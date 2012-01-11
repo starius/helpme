@@ -821,3 +821,5 @@ Sun java:
 see /usr/share/doc/sun-java6-bin/README.alternatives
 $ update-java-alternatives --set java-6-sun
 
+watch: re-run a command each %f seconds
+
