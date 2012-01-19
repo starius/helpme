@@ -798,6 +798,7 @@ Get aspell word list dictionary:
 $ aspell -l ru dump master
 
 OpenArena:
+ * openarena cheats: http://www.cheatbook.de/files/q3beta.htm
  * ~/.openarena/baseoa/q3config.cfg
 If you want all your games to be recorded, each in its own file,
 use this command, which will make a persistent setting:
