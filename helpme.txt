@@ -831,3 +831,7 @@ sshfs -o transform_symlinks
 
 Daemon is inhibited: sudo killall udisks; sudo killall udisks-daemon
 
+Get rid of default google search engine:
+Chrome > Options > Default search Manage > Add.
+https://ssl.scroogle.org/cgi-bin/nbbwssl.cgi?Gw=%s
+
