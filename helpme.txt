@@ -829,3 +829,5 @@ watch: re-run a command each %f seconds
 
 sshfs -o transform_symlinks
 
+Daemon is inhibited: sudo killall udisks; sudo killall udisks-daemon
+
