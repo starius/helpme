@@ -550,6 +550,12 @@ http://superuser.com/questions/304115/ubuntu-moving-root-folder-to-a-new-lvm-par
  * /etc/initramfs-tools/conf.d/resume: swap location for resume from hibernate
    /dev/mapper/<vg>/<lv>    !!! not UUID=... or /dev/<vg>/<lv>
 
+Change partition type (see sfdisk(8))
+ % sfdisk --print-id /dev/hdb 5
+ 6
+ % sfdisk --change-id /dev/hdb 5 83
+ OK
+
 haskell:
  * http://www.haskell.org/haskellwiki/Learn_Haskell_in_10_minutes
  * http://learnyouahaskell.com/
