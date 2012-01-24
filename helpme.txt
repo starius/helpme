@@ -578,7 +578,7 @@ How to install testing packages on debian stable with apt-get
 
 ATI non-free:
     # aptitude -r install linux-headers-2.6-$(uname -r|sed 's,[^-]*-[^-]*-,,') fglrx-control fglrx-driver
-    # aticonfig aptitude --initial
+    # aticonfig --initial
     see /etc/X11/xorg.conf
 
 Copy apt cache to another computer:
