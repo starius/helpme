@@ -757,7 +757,7 @@ reverse engineering:
   * -D    decompile
   * -s    show ascii too (helpful when looking for string address)
   * List called functions addresses:
-    objdump -D 1.exe | grep '\<call'|gawk '{print $8}' |grep 0x|sort|uniq
+    objdump -D 1.exe | grep '\<call'|awk '{print $8}' |grep 0x|sort|uniq
  * bbe
 
 keylogger:
