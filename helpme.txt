@@ -841,3 +841,11 @@ Get rid of default google search engine:
 Chrome > Options > Default search Manage > Add.
 https://ssl.scroogle.org/cgi-bin/nbbwssl.cgi?Gw=%s
 
+Wake On Lan:
+ * activate in BIOS
+ * on current machine:
+   # ethtool -s eth0 wol g
+   then shutdown
+ * from other machine:
+   $ wakeonlan <mac-address>
+
