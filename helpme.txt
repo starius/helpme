@@ -568,7 +568,7 @@ Change grub colors and background:
 
 Mouse -> Touchpad -> Disable mouse when typing
 
-aptitude install vim tmux screen bash-completion nginx etckeeper sudo
+aptitude install vim tmux screen bash-completion nginx etckeeper sudo mercurial git
 
 How to install testing packages on debian stable with apt-get
     -create or modify the /etc/apt/apt.conf file and make it contain the following line:
