@@ -851,3 +851,13 @@ Wake On Lan:
  * from other machine:
    $ wakeonlan <mac-address>
 
+init scripts in debian:
+ * /etc/init.d/myd
+   http://www.debian-administration.org/articles/28
+ # chmod chmod 755 /etc/init.d/myd
+ * In Debian releases prior to 6.0, a service could be added with update-rc.d:
+   # update-rc.d myd defaults
+ * Starting with Debian 6.0, the insserv command is used instead,
+   if dependency-based booting is enabled:
+   # insserv myd
+
