@@ -800,6 +800,18 @@ http://www.cyberciti.biz/tips/delete-leading-spaces-from-front-of-each-word.html
 
 The sed one-liners: http://sed.sourceforge.net/sed1line.txt
 
+sed: replace \n with smth
+http://stackoverflow.com/a/1252191
+sed ':a;N;$!ba;s/\n/ /g'
+This will read the whole file in a loop, then replaces the newline(s) with a space.
+  * create a register via :a
+  * append the current and next line to the register via N
+  * if we are before the last line, branch to the created register $!ba
+    (`$! means not to do it on the last line
+    (as there should be one final newline)).
+  * finally the substitution replaces every newline with a space on
+    the pattern space (which is the contents of the a register = the whole file.
+
 unoconv: converter between OpenOffice.org document formats
 
 Get aspell word list dictionary:
