@@ -801,6 +801,8 @@ http://www.cyberciti.biz/tips/delete-leading-spaces-from-front-of-each-word.html
 The sed one-liners: http://sed.sourceforge.net/sed1line.txt
 
 sed: replace \n with smth
+http://backreference.org/2009/12/23/how-to-match-newlines-in-sed/
+    sed ':begin;$!N;s/FOO\nBAR/FOOBAR/;tbegin;P;D'
 http://stackoverflow.com/a/1252191
 sed ':a;N;$!ba;s/\n/ /g'
 This will read the whole file in a loop, then replaces the newline(s) with a space.
