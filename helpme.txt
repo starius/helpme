@@ -512,7 +512,7 @@ syntek webcam
 http://doc.ubuntu-fr.org/syntek
 
 mplayer:
-    subtitles:
+    subtitles: -subcp cp1251
     add to ~/.mplayer/config: (not in gnome-mplayer section only)
         vf=screenshot
     then press s while watching
