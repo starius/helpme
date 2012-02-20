@@ -31,6 +31,8 @@ After installation:
   * add Russian
   * switch language: Shift + Ctrl
 
+cron-apt -- automatic security updates
+
 etckeeper
 
 dpkg-reconfigure python-poker-network
