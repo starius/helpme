@@ -33,6 +33,9 @@ After installation:
 
 cron-apt -- automatic security updates
 
+Google encrypted chrome plugin:
+https://encrypted.google.com/search?{google:RLZ}{google:acceptedSuggestion}{google:originalQueryForSuggestion}sourceid=chrome&ie={inputEncoding}&q=%s
+
 etckeeper
 
 dpkg-reconfigure python-poker-network
