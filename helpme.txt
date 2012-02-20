@@ -635,7 +635,7 @@ Encrypted (LVM) volumes:
  * reboot or mount
  * cryptsetup luksAddKey <device>  --   add  a  new  key file/passphrase.
  * cryptsetup luksRemoveKey <device>  --   remove supplied key or key file
-Passdev (encripted partition with keyfiles):
+Passdev (encrypted partition with keyfiles):
  * create lv (keysbase)
  * luks over keysbase (keys)
  * ext3 keys
