@@ -880,3 +880,7 @@ init scripts in debian:
    if dependency-based booting is enabled:
    # insserv myd
 
+
+Sync BitBucket and GitHub
+bitbucket2github
+
