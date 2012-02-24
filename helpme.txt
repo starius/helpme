@@ -887,3 +887,6 @@ bitbucket2github
 bash range:
 for i in `seq 1 $last`; do echo $i; done
 
+wc no filename:
+wc < filename
+
