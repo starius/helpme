@@ -757,6 +757,9 @@ cheat system time inside virtualbox:
  * Guest:
     # date MMDDhhmm
 
+Convert Unix Timestamp to a Date:
+date -d@1330246800
+
 reverse engineering:
  * EDB: http://www.codef00.com/projects#edisassm
  * debuggers: http://forum.antichat.ru/thread44833.html
