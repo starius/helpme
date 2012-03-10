@@ -763,6 +763,7 @@ date -d@1330246800
 reverse engineering:
  * EDB: http://www.codef00.com/projects#edisassm
  * debuggers: http://forum.antichat.ru/thread44833.html
+ * nm: list symbols from object files
  * objdump:
   * -D    decompile
   * -s    show ascii too (helpful when looking for string address)
