@@ -824,6 +824,7 @@ This will read the whole file in a loop, then replaces the newline(s) with a spa
     the pattern space (which is the contents of the a register = the whole file.
 
 How to use sed to delete all lines before the first match of a pattern?
+$ sed '/sweet/,$!d' -i file
 $ sed -r -n -e '/PATTERN/,${p}' -i file
 The flag -n means that lines that do not match are discarded;
 
