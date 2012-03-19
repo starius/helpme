@@ -899,3 +899,5 @@ for i in `seq 1 $last`; do echo $i; done
 wc no filename:
 wc < filename
 
+pymol scene: http://www.virology.wisc.edu/acp/Tutorials/PyMol-animations.pdf
+
