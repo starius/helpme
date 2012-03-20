@@ -1,0 +1,82 @@
+Mercurial. Test
+---------------
+
+Как:
+ * скопировать себе какой-нибудь репозиторий
+ * перейти к какой-то ревизии в репозитории
+ * сделать изменения и добавить их в историю
+ * выкачать из другого репозитория новые изменения
+ * влить изменения из одного места в истории в другое
+ * отправить изменения в другой репозиторий
+
+Mercurial. History editing
+--------------------------
+
+ * points in history are changesets, not commits (file states)
+ * mq
+  * qimport
+  * qpop
+  * diff/qdiff
+  * qrefresh
+   * -- edit
+   * --currentdate
+  * .hg/patches/series
+  * qpush
+  * qfinish
+ * rebase
+  * --source/--dest ??
+ * strip
+
+Mercurial. Branch
+-----------------
+
+http://stevelosh.com/blog/2009/08/a-guide-to-branching-in-mercurial
+ * tags
+ * clone
+ * bookmarks
+ * branches
+ * anonymous branches
+ * Mercurial will push/pull all branches by default
+
+Mercurial. Other
+----------------
+
+ * clean
+ * revert
+ * record, ci files
+ * bisect
+ * cat ??
+
+Mercurial. Commands I use
+-------------------------
+
+ * hg add
+ * hg bisect
+ * hg branch
+ * hg cat
+ * hg ci
+ * hg clean
+ * hg clone
+ * hg diff
+ * hg glog
+ * hg heads
+ * hg in
+ * hg log
+ * hg manifest
+ * hg mv
+ * hg merge
+ * hg out
+ * hg pull
+ * hg push
+ * hg qimport
+ * hg rebase
+ * hg record
+ * hg resolve
+ * hg revert
+ * hg rm
+ * hg st
+ * hg tag
+ * hg tags
+ * hg up
+ * hg view
+
