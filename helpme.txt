@@ -59,6 +59,10 @@ aptitude
 
 dpkg --ignore-depends=libgcc1 -i gcc-4.3.deb
 
+To install .deb package and all its packages:
+# dpkg -i ...
+# apt-get -f install
+
 perror -- отпределяет название ошибки по номеру
 
 
