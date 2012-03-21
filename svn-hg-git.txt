@@ -1,0 +1,18 @@
+Subversion (SVN)     Mercurial (Hg)         Git
+================     ==============         ===
+svn add              hg add                 git add
+svn blame            hg blame               git blame
+svn cat              hg cat                 git show
+svn checkout         hg clone               git clone
+svn commit           hg commit ; hg push    git commit -a ; git push
+svn delete/remove    hg remove              git rm
+svn diff             hg diff                git diff, git diff --cached
+svn help             hg help                git help
+svn log              hg log                 git log
+svn revert           hg revert              git checkout -f
+svn status           hg status              git status
+svn update           hg pull --update       git pull
+svn move/rename      hg move/rename         git mv
+
+http://blogs.atlassian.com/2012/02/mercurial-vs-git-why-mercurial/
+
