@@ -143,6 +143,13 @@ http://stevelosh.com/blog/2009/08/a-guide-to-branching-in-mercurial
  * anonymous branches
  * Mercurial will push/pull all branches by default
 
+ * graft
+   Копирует коммиты с ветки на ветку
+    * полезно при backporting'е
+    * опция --edit полезна, чтобы убрать поместки типа see #123
+      для системы управления проектом (тут можно дать краткую справку
+      о том, что это такое и что оно как правило привязано к репозиторию)
+
 Теперь читы...
 
 rebase
