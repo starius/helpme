@@ -30,6 +30,9 @@ Mercurial. Other
   Пример
  * cat ??
  * Понятие о команде hg glog
+ * rollback
+   не более 1 раза
+   .hg/last-message.txt
 
 Mercurial. History editing
 --------------------------
