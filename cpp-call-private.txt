@@ -1,0 +1,7 @@
+#define private friend class Hack; private
+
+Notes:
+If class Hack and target class are from different namespaces,
+then class Hack must be declared before target class definition,
+and class name in friend-statement should be prepended  with namespaces
+
