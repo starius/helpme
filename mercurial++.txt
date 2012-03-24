@@ -33,6 +33,7 @@ Mercurial. Other
  * rollback
    не более 1 раза
    .hg/last-message.txt
+ * diff / patch и его использование (в качестве shelve)
 
 Mercurial. History editing
 --------------------------
