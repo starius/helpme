@@ -764,6 +764,9 @@ cheat system time inside virtualbox:
 Convert Unix Timestamp to a Date:
 date -d@1330246800
 
+Run some command in russian:
+$ LANG=ru_RU.utf8 date -d@1330246800
+
 reverse engineering:
  * EDB: http://www.codef00.com/projects#edisassm
  * debuggers: http://forum.antichat.ru/thread44833.html
