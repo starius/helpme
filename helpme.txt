@@ -31,6 +31,12 @@ After installation:
   * add Russian
   * switch language: Shift + Ctrl
 
+Open magnet links in qbittorrent:
+$ gconftool-2 -t string -s /desktop/gnome/url-handlers/magnet/command \
+    "/usr/bin/qbittorrent '%s'"
+$ gconftool-2 -t bool -s /desktop/gnome/url-handlers/magnet/needs_terminal false
+$ gconftool-2 -t bool -s /desktop/gnome/url-handlers/magnet/enabled true
+
 cron-apt -- automatic security updates
 
 Google encrypted chrome plugin:
