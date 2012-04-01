@@ -595,6 +595,23 @@ How to install testing packages on debian stable with apt-get
 
 apt-get install `apt-show-versions -u -b | grep unstable`
 
+To downgrade all packages to stable:
+ * /etc/apt/preferences
+    Package: *
+    Pin: release a=stable
+    Pin-Priority: 2000
+
+    Package: *
+    Pin: release a=testing
+    Pin-Priority: 60
+
+    Package: *
+    Pin: release a=unstable
+    Pin-Priority: 50
+ * rm /etc/apt/apt.conf
+ * apt-get update
+ * apt-get dist-upgrade
+
 ATI non-free:
     # aptitude -r install linux-headers-2.6-$(uname -r|sed 's,[^-]*-[^-]*-,,') fglrx-control fglrx-driver
     # aticonfig --initial
