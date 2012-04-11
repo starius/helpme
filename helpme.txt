@@ -522,6 +522,7 @@ dpkg -L aptitude -- list of files of aptitude package
 dpkg-query -S /usr/bin/bash -- search for package containing the file
 dpkg-deb -I 123.deb -- get info about a binary package
 dpkg-deb -c 123.deb -- get list of file to be installed from this package
+ar vx mypackage.deb -- deb to tar
 
 syntek webcam
 http://doc.ubuntu-fr.org/syntek
