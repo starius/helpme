@@ -16,3 +16,6 @@ svn move/rename      hg move/rename         git mv
 
 http://blogs.atlassian.com/2012/02/mercurial-vs-git-why-mercurial/
 
+Github pages:
+https://gist.github.com/833223
+
