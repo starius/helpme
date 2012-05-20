@@ -618,6 +618,9 @@ ATI non-free:
     # aticonfig --initial
     see /etc/X11/xorg.conf
 
+open another xserver:
+$ startx -- :1 &
+
 Copy apt cache to another computer:
  * create dvd iso with aptoncd
  * copy is file
