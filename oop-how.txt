@@ -42,3 +42,10 @@ http://forum.ixbt.com/topic.cgi?id=26:33689
 
 См. также http://smeshok.com/main/humor/slovars/index-00003.shtml
 
+В OOA и OOD выделяют 3 точки зрения:
+ * деловая: специфическая информация для конкретной предметной области,
+   важная конечному пользователю
+ * спецификация (интерфейсы)
+ * реализация
+http://en.wikipedia.org/wiki/Ambiguous_viewpoint
+
