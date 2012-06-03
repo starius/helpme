@@ -934,3 +934,5 @@ pymol scene: http://www.virology.wisc.edu/acp/Tutorials/PyMol-animations.pdf
 sound test, some sound, see sox(1)
 play -n -c1 synth sin %-12 sin %-9 sin %-5 sin %-2 fade h 0.1 1 0.1
 
+latex2html -html_version 4.0,unicode 1.tex
+
