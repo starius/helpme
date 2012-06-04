@@ -533,6 +533,9 @@ mplayer:
     choose audio device: -ao alsa:device=hw=1.0
     enhance volume: -af volume=10.1:0
 
+vlc external file:
+$ vlc video.mkv --input-slave audio.mka
+
 How To Document and Organize Your C++ Code
  * http://www.edparrish.com/common/cppdoc.html
  * vars and funcs: lower case letters and underbars ('_') as separators
