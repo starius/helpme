@@ -1,0 +1,6 @@
+sudo mkdir /media/transformer
+sudo chmod 775 /media/transformer
+sudo mtpfs -o allow_other /media/transformer
+
+sudo umount /media/transformer
+
