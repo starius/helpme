@@ -536,6 +536,9 @@ mplayer:
 vlc external file:
 $ vlc video.mkv --input-slave audio.mka
 
+Merge audio and video mkv:
+$ mkvmerge -D audio.avi -A video.avi -o mymovie.mkv
+
 How To Document and Organize Your C++ Code
  * http://www.edparrish.com/common/cppdoc.html
  * vars and funcs: lower case letters and underbars ('_') as separators
