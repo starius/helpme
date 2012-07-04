@@ -12,3 +12,8 @@ Static linking with compiler libs:
 Project Settings->Configuration Settings->C/C++->Code Generation:
 Runtime Library := Multi-threaded (/MT)
 
+Specialization:
+    template<> class vector<bool>
+Partial specialization:
+    template <class T> void swap(vector<T>&, vector<T>&);
+
