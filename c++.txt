@@ -25,3 +25,7 @@ FAQ:
 FQA:
     http://yosefk.com/c++fqa/
 
+Concepts are likely to be presented by keyword "typename"
+(parameters of templates or new types, created by template code)
+used as type replacements for compile-time duck typing.
+
