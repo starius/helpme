@@ -1,0 +1,14 @@
+use fast_pool_allocator when dealing with containers such as std::list
+use pool_allocator when dealing with containers such as std::vector
+http://www.boost.org/doc/libs/1_48_0/libs/pool/doc/html/boost/fast_pool_allocator.html
+
+#define private friend class Hack; private
+Notes:
+If class Hack and target class are from different namespaces,
+then class Hack must be declared before target class definition,
+and class name in friend-statement should be prepended  with namespaces
+
+Static linking with compiler libs:
+Project Settings->Configuration Settings->C/C++->Code Generation:
+Runtime Library := Multi-threaded (/MT)
+

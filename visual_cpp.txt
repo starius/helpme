@@ -1,5 +1,0 @@
-Static linking with compiler libs:
-
-Project Settings->Configuration Settings->C/C++->Code Generation:
-Runtime Library := Multi-threaded (/MT)
-
