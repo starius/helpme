@@ -1,3 +1,5 @@
 use fast_pool_allocator when dealing with containers such as std::list
 use pool_allocator when dealing with containers such as std::vector
 
+http://www.boost.org/doc/libs/1_48_0/libs/pool/doc/html/boost/fast_pool_allocator.html
+
