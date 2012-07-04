@@ -28,4 +28,7 @@ FQA:
 Concepts are likely to be presented by keyword "typename"
 (parameters of templates or new types, created by template code)
 used as type replacements for compile-time duck typing.
+    http://en.wikipedia.org/wiki/Concept_(generic_programming)
+    http://en.wikipedia.org/wiki/Concepts_(C++)
+    http://www.boost.org/doc/libs/1_50_0/libs/concept_check/concept_check.htm
 
