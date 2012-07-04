@@ -17,3 +17,11 @@ Specialization:
 Partial specialization:
     template <class T> void swap(vector<T>&, vector<T>&);
 
+Stepanov:
+    http://www.sgi.com/tech/stl/drdobbs-interview.html
+
+FAQ:
+     http://www.parashift.com/c++-faq-lite/
+FQA:
+    http://yosefk.com/c++fqa/
+
