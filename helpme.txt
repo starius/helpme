@@ -942,3 +942,13 @@ play -n -c1 synth sin %-12 sin %-9 sin %-5 sin %-2 fade h 0.1 1 0.1
 
 latex2html -html_version 4.0,unicode 1.tex
 
+http://sourceforge.net/mailarchive/forum.php?
+thread_name=CAKcBokumm95_xHnTrJ_qFA_HJ_dURGZyS2KUmmjbnUeKVzXtdw%40mail.gmail.com
+&forum_name=witty-interest:
+    The proper way to do this on Unix platforms is to install the release
+    library to /usr/lib and the debug symbols to /usr/lib/debug/usr/lib.
+    When you debug the library, gdb will load the debug symbols and
+    combine them with the release library. You to do this, you must use
+    CMAKE_BUILD_TYPE=RelWithDebInfo and then strip. That's exactly what
+    the Debian (and Ubuntu) packaes do.
+
