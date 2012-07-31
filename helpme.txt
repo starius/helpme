@@ -522,6 +522,7 @@ syntek webcam
 http://doc.ubuntu-fr.org/syntek
 
 mplayer:
+    subtitles: -sub sailormoon56.srt
     subtitles: -subcp cp1251
     add to ~/.mplayer/config: (not in gnome-mplayer section only)
         vf=screenshot
