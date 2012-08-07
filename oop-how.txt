@@ -49,3 +49,7 @@ http://forum.ixbt.com/topic.cgi?id=26:33689
  * реализация
 http://en.wikipedia.org/wiki/Ambiguous_viewpoint
 
+http://habrahabr.ru/post/149096/
+интернизация -- это когда неизменяемые объекты хранятся в единственном числе
+    (как сделаны строки в питоне)
+
