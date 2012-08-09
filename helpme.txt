@@ -470,6 +470,9 @@ gdb: catch throw
 nginx
     server_name_in_redirect off;
 
+A Default "Catch All" Server Block
+    http://wiki.nginx.org/ServerBlockExample
+
 Linux:   for fname in *.jpg; do mogrify -resize 640 $fname; done
 Windows: for %fname in (*.jpg) do mogrify -resize 640 %fname;
 
