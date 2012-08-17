@@ -216,6 +216,9 @@ hamachi-gui    hamachi-gui_0.9.5-0_i386-gutsy.deb
 alsamixer - звуковой микшер из-под командной строки
 нужно нажимать на М под "бегунками"
 
+Record capture sound from audio card:
+    audacity -> mixer toolbar (right top part of screen)
+
 localepurge -- удалить ненужные локализации из системы
 
 Anomos - анонимный bittorent
