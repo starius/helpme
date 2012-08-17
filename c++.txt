@@ -36,3 +36,7 @@ logical_cast:
     throws for references
     returns 0 for pointers
 
+Caller graphs and profiling:
+    valgrind --tool=callgrind
+    kcachegrind for view
+
