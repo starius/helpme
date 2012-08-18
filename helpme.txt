@@ -960,3 +960,5 @@ thread_name=CAKcBokumm95_xHnTrJ_qFA_HJ_dURGZyS2KUmmjbnUeKVzXtdw%40mail.gmail.com
     CMAKE_BUILD_TYPE=RelWithDebInfo and then strip. That's exactly what
     the Debian (and Ubuntu) packaes do.
 
+/usr/share/sounds/
+
