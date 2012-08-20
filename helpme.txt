@@ -962,3 +962,6 @@ thread_name=CAKcBokumm95_xHnTrJ_qFA_HJ_dURGZyS2KUmmjbnUeKVzXtdw%40mail.gmail.com
 
 /usr/share/sounds/
 
+Debian forward all IP traffic through SOCKS proxy:
+    http://linuxaria.com/article/redirect-all-tcp-traffic-through-transparent-socks5-proxy-in-linux?lang=en
+
