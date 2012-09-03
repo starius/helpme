@@ -1,0 +1,31 @@
+OpenArena:
+ * openarena cheats: http://www.cheatbook.de/files/q3beta.htm
+ * Third person view     /cg_thirdperson 1
+ * ~/.openarena/baseoa/q3config.cfg
+If you want all your games to be recorded, each in its own file,
+use this command, which will make a persistent setting:
+ * /seta cl_autoRecordDemo 1
+ * play a demo: \demo <name>
+ * increase slot nymber: \sv_maxclients 500
+ * \map_restart
+ * /team - Makes you join the game or spectate
+ * \team r - enters the game in the red team
+When you are spectating, if you press "ATTACK" button (usually, left
+mouse click), you begin "follow" spectate mode (seeing in first
+person for the point of view of another player), and clicking again
+you cycle between players. If you pres "USE_ITEM" (ENTER key by
+default), you switch to "free" spectate mode again (your "virtual
+camera" can "fly" around the arena as you wish).
+
+seta cg_fov 120
+seta cg_noprojectiletrail 1
+seta r_detailTextures 0
+seta r_picmip 8
+seta r_fastSky 1
+seta r_subdivisions 11
+seta r_gamma 2
+seta cg_truelightning 1
+seta snaps 40
+seta cl_maxpackets 125
+seta cg_delag 1
+
