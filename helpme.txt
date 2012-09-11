@@ -948,3 +948,5 @@ Debian forward all IP traffic through SOCKS proxy:
 
 sg - execute command as different group ID
 
+haproxy agains DoS: http://haproxy.1wt.eu/download/1.3/examples/antidos.cfg
+
