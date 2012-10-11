@@ -50,8 +50,8 @@ sudo aptitude -f reinstall '~i~Dpython!~nshedskin'
 
 aptitude
     http://algebraicthunk.net/~dburrows/projects/aptitude/doc/en/ch02s03s05.html
-    '~D^python$' -- зависящие от питона
-    '~R^python$' -- зависимости питона
+    '~D^python$' -- зависящие от питона       apt-cache rdepends python
+    '~R^python$' -- зависимости питона        apt-cache depends python
     ~M           -- automatically installed
     keep-all -- Cancels all scheduled actions on all packages
     forget-new -- Forgets all internal information about what packages are “new”
