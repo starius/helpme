@@ -604,6 +604,9 @@ How to install testing packages on debian stable with apt-get
 
 apt-get install `apt-show-versions -u -b | grep unstable`
 
+apt-cache policy <package>
+    Show installed, candidate etc. verions of <package>
+
 To downgrade all packages to stable:
  * /etc/apt/preferences
     Package: *
