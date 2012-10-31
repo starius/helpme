@@ -469,6 +469,7 @@ echo 10 > /proc/sys/vm/swappiness
 vm.swappiness=10
 
 gdb: catch throw
+gdb non-interactive mode: gdb -batch -x script.gdb --args ...
 
 nginx
     server_name_in_redirect off;
