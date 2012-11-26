@@ -29,3 +29,8 @@ seta snaps 40
 seta cl_maxpackets 125
 seta cg_delag 1
 
+How to send private message (PM) in OA:
+\serverstatus
+    get client number of target user
+\tell client_number smth
+
