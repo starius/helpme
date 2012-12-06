@@ -1,3 +1,5 @@
 irssi, block new PM:
 set autocreate_windows off
 
+/CHANNEL ADD -auto #irssi IRCnet
+
