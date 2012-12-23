@@ -962,3 +962,6 @@ How to strip JPEG metadata:
 convert -strip
 exiftool -all= *.jpg
 
+inline diff:
+$ wdiff -t 1.txt 2.txt
+
