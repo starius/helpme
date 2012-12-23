@@ -1,0 +1,7 @@
+fix brightness
+1. sudoedit /etc/default/grub
+2. find the line starting with GRUB_CMDLINE_LINUX_DEFAULT
+3. add "acpi_osi=Linux acpi_backlight=vendor splash" to the options
+4. sudo update-grub2
+5. reboot
+
