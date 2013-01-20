@@ -1,5 +1,8 @@
 irssi, block new PM:
 set autocreate_windows off
 
+/SET autolog ON
+
+/SERVER ADD -auto -network efnet efnet.cs.hut.fi 6667
 /CHANNEL ADD -auto #irssi IRCnet
 
