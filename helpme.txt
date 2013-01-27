@@ -961,6 +961,9 @@ $ unrar e file.rar
 How to strip JPEG metadata:
 convert -strip
 exiftool -all= *.jpg
+mediainfo - best reader of metainfo (debian 7+)
+extract - another reader of metainfo
+ffmpeg -i in.mp4 -acodec copy -vcodec copy out.mp4    (removes most of metadata)
 
 inline diff:
 $ wdiff -t 1.txt 2.txt
