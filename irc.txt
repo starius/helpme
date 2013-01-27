@@ -6,3 +6,9 @@ set autocreate_windows off
 /SERVER ADD -auto -network efnet efnet.cs.hut.fi 6667
 /CHANNEL ADD -auto #irssi IRCnet
 
+Register a channel:
+rusnet:
+    /msg ChanServ@*.RusNet register #chan password "Channel description"
+freenode:
+    /msg ChanServ register #chan password "Channel description"
+
