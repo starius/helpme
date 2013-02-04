@@ -818,6 +818,7 @@ reverse engineering:
   * List called functions addresses:
     objdump -D 1.exe | grep '\<call'|awk '{print $8}' |grep 0x|sort|uniq
  * bbe
+ * addr2line - address to function name
 
 keylogger:
 http://code.google.com/p/logkeys/wiki/Documentation#Usage_how-to
