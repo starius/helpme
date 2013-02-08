@@ -12,7 +12,17 @@ rusnet:
 freenode:
     /msg ChanServ register #chan password "Channel description"
 
-beep on hilight:
-    /set bell_beeps ON
-    /set beep_msg_level MSGS NOTICES DCC DCCMSGS HILIGHT
+irssi hilight:
+    beep on hilight:
+        /set bell_beeps ON
+        /set beep_msg_level MSGS NOTICES DCC DCCMSGS HILIGHT
+    add hilight:
+        /hilight -regex nick
+        /hilight nick
+    list hilights:
+        /hilight
+    remove hilight:
+        /dehilight
+
+irssi - save settings: /save
 
