@@ -969,3 +969,7 @@ ffmpeg -i in.mp4 -acodec copy -vcodec copy out.mp4    (removes most of metadata)
 inline diff:
 $ wdiff -t 1.txt 2.txt
 
+ffmpeg
+    -ss start
+    -t duration
+
