@@ -552,7 +552,7 @@ How To Document and Organize Your C++ Code
  * http://www.edparrish.com/common/cppdoc.html
  * vars and funcs: lower case letters and underbars ('_') as separators
  * names of private data members of classes should end with '_'
-Not to forgen:
+Not to forget:
  * use boost::polymorphic_downcast
  * boost static assert
 
