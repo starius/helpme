@@ -26,3 +26,5 @@ irssi hilight:
 
 irssi - save settings: /save
 
+./ctcp <nick> version
+
