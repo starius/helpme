@@ -770,7 +770,7 @@ http://www.gnupg.org/gph/en/manual.html
  * gpg --fingerprint
    Output:   pub   4096R/<HERE_IS_KEY_SPECIFIER> 2011-11-10 ...
  * --armor = generate ascii-wrapped files
- * gpg --output output_priveta_file --gen-revoke key-specifier
+ * gpg --output output_private_file --gen-revoke key-specifier
    If the --output option is omitted, the result will be placed on stdout
    key-specifier: email or string from output of gpg --fingerprint
  * Exporting a public key:
@@ -786,6 +786,7 @@ http://www.gnupg.org/gph/en/manual.html
     gpg --export-secret-key -a > secret.key
    and to import them again:
     gpg --import secret.key
+GPG cheatsheet http://irtfweb.ifa.hawaii.edu/~lockhart/gpg/gpg-cs.html
 
 create debian packages:
  * https://wiki.ubuntu.com/PackagingGuide/Complete
