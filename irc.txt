@@ -28,3 +28,6 @@ irssi - save settings: /save
 
 ./ctcp <nick> version
 
+kick zombie:
+/nickserv ghost nickname [password]
+
