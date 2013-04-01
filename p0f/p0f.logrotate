@@ -1,0 +1,15 @@
+/var/log/p0f.log {
+	daily
+	minsize 10M
+	missingok
+	rotate 52
+	compress
+	delaycompress
+	notifempty
+	create 640 p0f adm
+	sharedscripts
+	postrotate
+		service p0f restart
+	endscript
+}
+

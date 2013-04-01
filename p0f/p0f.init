@@ -1,0 +1,25 @@
+case "$1" in
+start)
+    p0f -i eth0 -d -u p0f-user -o /var/log/p0f.log
+;;
+stop)
+    killall p0f
+;;
+restart)
+    $0 stop
+    $0 start
+;;
+status)
+if pgrep p0f ; then
+    echo "Running"
+    exit 0
+else
+    echo "Not running"
+    exit 1
+fi
+;;
+*)
+echo "Usage: $0 {start|stop|restart|status}"
+exit 1
+esac
+
