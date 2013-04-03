@@ -6,7 +6,7 @@
 	compress
 	delaycompress
 	notifempty
-	create 640 p0f adm
+	create 640 p0f-user adm
 	sharedscripts
 	postrotate
 		service p0f restart
