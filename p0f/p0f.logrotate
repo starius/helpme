@@ -8,6 +8,8 @@
 	notifempty
 	create 640 p0f-user adm
 	sharedscripts
+	compresscmd /bin/bzip2
+	compressext .bz2
 	postrotate
 		service p0f restart
 	endscript
