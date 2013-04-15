@@ -1,0 +1,11 @@
+Voice changing:
+Linux: see voicechange.conf file in this directory
+Windows: http://rutracker.org/forum/viewtopic.php?t=4397057
+    Howto: http://rutracker.org/forum/viewtopic.php?t=3941624
+
+Recording:
+Skype - Linux: http://atdot.ch/scr/
+Skype - Windows: http://clownfish-translator.com
+Ekiga - Linux:
+    http://www.nuxified.org/blog/recording_your_ekiga_calls_with_wireshark
+
