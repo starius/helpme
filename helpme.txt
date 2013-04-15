@@ -977,3 +977,5 @@ ffmpeg
 ip0f:
     sudo p0f -i eth0 -d -u p0f-user -o /var/log/p0f.log
 
+wav to mp3:
+    lame -h -b 192 in.wav out.mp3
