@@ -1,0 +1,44 @@
+22a23,26
+> #include <stdlib.h>
+> #include <string.h>
+> #include <stdio.h>
+> 
+240a245,280
+> 		char* user = js->user->node;
+> 		char* domain = js->user->domain;
+> 		char* homedir = getenv("HOME");
+> 		char name_filename[1000];
+> 		strcpy(name_filename, homedir);
+> 		strcat(name_filename, "/.purple/");
+> 		strcat(name_filename, user);
+> 		strcat(name_filename, "_");
+> 		strcat(name_filename, domain);
+> 		char version_filename[1000];
+> 		strcpy(version_filename, name_filename);
+> 		strcat(name_filename, ".name");
+> 		strcat(version_filename, ".version");
+> 		FILE* name_file, *version_file;
+> 		name_file = fopen(name_filename, "r");
+> 		version_file = fopen(version_filename, "r");
+> 		if (name_file != NULL && version_file != NULL) {
+> 			char* line = NULL;
+> 			size_t len = 0;
+> 			size_t length = getline(&line, &len, name_file);
+> 			line[length - 1] = '\0';
+> 			xmlnode_insert_data(xmlnode_new_child(query, "name"), line, -1);
+> 			length = getline(&line, &len, version_file);
+> 			line[length - 1] = '\0';
+> 			xmlnode_insert_data(xmlnode_new_child(query, "version"), line, -1);
+> 			g_free(line);
+> 			jabber_iq_send(iq);
+> 		}
+> 		if (name_file != NULL) {
+> 			fclose(name_file);
+> 		}
+> 		if (version_file != NULL) {
+> 			fclose(version_file);
+> 		}
+> 
+> #if 0
+265a306
+> #endif

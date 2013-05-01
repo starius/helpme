@@ -1,0 +1,10 @@
+change file libpurple/protocols/jabber/iq.c
+compile
+copy libjabber.so.0.0.0 to /usr/lib/purple-2/
+
+specify software name in ~/.purple/nick_domain.name
+specify software version in ~/.purple/nick_domain.version
+
+For jid's without these two files, version requests are skipped,
+which is OK (e.g., gtalk does so).
+
