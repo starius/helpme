@@ -363,14 +363,8 @@ http://linuxon1001p.blogspot.com/2010/03/fixing-wireless.html
     The file is /etc/modules.
     You don't need to put in "sudo modprobe" before them
 
-# gpg --keyserver wwwkeys.eu.pgp.net --recv-keys 07DC563D1F41B907
-gpg: requesting key 1F41B907 from hkp server wwwkeys.eu.pgp.net
-gpg: /root/.gnupg/trustdb.gpg: trustdb created
-gpg: key 1F41B907: public key "Christian Marillat  " imported
-gpg: no ultimately trusted keys found
-gpg: Total number processed: 1
-gpg:               imported: 1
-#  gpg --armor --export 1F41B907 | apt-key add -
+# gpg --keyserver keyserver.ubuntu.com --recv-keys 07DC563D1F41B907
+# gpg --armor --export 1F41B907 | apt-key add -
 
 sudo apt-key adv --recv-keys --keyserver keyserver.ubuntu.com КЛЮЧ
 
