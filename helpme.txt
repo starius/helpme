@@ -914,6 +914,7 @@ init scripts in debian:
    if dependency-based booting is enabled:
    # insserv myd
 
+Redo service installation: # insserv -r myd
 
 Sync BitBucket and GitHub
 bitbucket2github
