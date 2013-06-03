@@ -93,6 +93,10 @@ sing -- ip spoofing
 CheckInstall - контроль программ, установленных из исходников, создает пакет .deb
 easy-deb - создает пакет .deb из проекта python
 
+apply patch, build and install
+apt-build --patch mono.patch install sni-qt
+    http://habrahabr.ru/post/181934/
+
 режимы процессора:
     http://habrahabr.ru/blogs/linux/80914/#habracut
     переключить режим процессора:
