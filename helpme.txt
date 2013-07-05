@@ -832,8 +832,8 @@ http://code.google.com/p/logkeys/wiki/Documentation#Usage_how-to
    ENABLED=1
    DEVICE=/dev/input/eventX
 
-network audio system + mplayer + ssh:
- * install package "nas" on all machines
+network audio system + mplayer + ssh:   sound
+ * install packages "nas", "oss-compat" on all machines
  * ssh-forward port 8008 of "master" machine to 8000 of "audio" machine
  * on "master" machine:
    $ AUDIOSERVER=tcp/127.0.0.1:8008 mplayer -ao nas 123.avi
