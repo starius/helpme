@@ -733,6 +733,9 @@ Close window (do not detach tmux)
  $ tmux at
  $ ssh-add         [inside tmux]
 
+cron + tmux + irssi:
+@reboot tmux new -d irssi
+
 nvidia installer debian:
 http://gosha.me/node/126
  * apt-get install build-essential libc6-dev linux-headers-$(uname -r)
