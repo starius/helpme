@@ -1001,3 +1001,8 @@ mix several audio files:
 
 wav to mp3:
     lame -h -b 192 in.wav out.mp3
+
+Connect to VPN server:
+http://www.vpngate.net/
+sudo openvpn --config xxxx.ovpn
+
