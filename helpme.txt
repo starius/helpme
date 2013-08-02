@@ -540,6 +540,7 @@ mplayer:
     mplayer -nocache -framedrop -vfm ffmpeg -lavdopts lowres=1:fast:skiploopfilter=all -nobps -ni -forceidx -mc 0
     choose audio device: -ao alsa:device=hw=1.0
     enhance volume: -af volume=10.1:0
+    framebuffer: -vo fbdev2 -zoom -xy 1024
 
 vlc external file:
 $ vlc video.mkv --input-slave audio.mka
