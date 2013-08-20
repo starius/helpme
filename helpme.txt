@@ -928,6 +928,9 @@ Redo service installation: # insserv -r myd
 Sync BitBucket and GitHub
 bitbucket2github
 
+Make git master HEAD point to current HEAD of branch:
+$ git update-ref refs/heads/master HEAD
+
 bash range:
 for i in `seq 1 $last`; do echo $i; done
 
