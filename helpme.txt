@@ -734,6 +734,10 @@ Close window (do not detach tmux)
  $ tmux at
  $ ssh-add         [inside tmux]
 
+fix ssh connect lag after debug1: SSH2_MSG_SERVICE_ACCEPT received
+$ vi /etc/ssh/sshd_config
+UseDNS no
+
 cron + tmux + irssi:
 @reboot tmux new -d irssi
 
