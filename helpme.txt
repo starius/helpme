@@ -813,6 +813,10 @@ cheat system time inside virtualbox:
 Convert Unix Timestamp to a Date:
 date -d@1330246800
 
+Change timezone:
+$ sudo dpkg-reconfigure tzdata
+$ sudo service rsyslog restart
+
 Run some command in russian:
 $ LANG=ru_RU.utf8 date -d@1330246800
 
