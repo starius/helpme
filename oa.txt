@@ -31,6 +31,7 @@ seta cg_delag 1
 
 How to send private message (PM) in OA:
 \serverstatus
+\clients
     get client number of target user
 \tell client_number smth
 
