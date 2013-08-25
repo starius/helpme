@@ -1018,3 +1018,5 @@ Connect to VPN server:
 http://www.vpngate.net/
 sudo openvpn --config xxxx.ovpn
 
+wget -N -t 14 -nd http://downloads.sourceforge.net/scarangel/ipfilter.rar
+
