@@ -35,3 +35,5 @@ How to send private message (PM) in OA:
     get client number of target user
 \tell client_number smth
 
+r_ignorehwgamma - color balance, brightness
+
