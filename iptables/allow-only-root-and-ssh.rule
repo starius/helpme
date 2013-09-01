@@ -1,0 +1,4 @@
+-A OUTPUT -o eth0 -m owner --uid-owner 0 -j ACCEPT
+-A OUTPUT -s 192.168.0.0/22 -o eth0 -p tcp -m tcp --dport 22 -j ACCEPT
+-A OUTPUT -o eth0 -j DROP
+
