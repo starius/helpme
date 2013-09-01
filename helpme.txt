@@ -982,6 +982,10 @@ mediainfo - best reader of metainfo (debian 7+)
 extract - another reader of metainfo
 ffmpeg -i in.mp4 -acodec copy -vcodec copy out.mp4    (removes most of metadata)
 
+convert -auto-orient
+
+tar --numeric-owner
+
 inline diff:
 $ wdiff -t 1.txt 2.txt
 
