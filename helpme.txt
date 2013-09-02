@@ -75,6 +75,8 @@ perror -- отпределяет название ошибки по номеру
 
 network-admin - тут можно поменять хост компьютера в локальной сети
 
+How to find IP address of a machine if I know their MAC Address:
+$ arp -na
 
 способ убить процессы по имени:
   ps -A | grep app.wt | awk '{print $1}' | xargs kill
