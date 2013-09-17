@@ -1,0 +1,10 @@
+TorChat for purple (pigdin/finch):
+
+1. aptitude install libpurple-dev fpc tor
+2. download https://github.com/prof7bit/TorChat
+    (backup https://github.com/starius/TorChat)
+3. edit src/purple/Makefile, remove -dDebugToConsole
+4. make
+5. cp ../../bin/libpurpletorchat.so ~/.purple/plugins/
+6. run pidgin/finch
+
