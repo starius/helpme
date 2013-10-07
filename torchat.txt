@@ -8,3 +8,7 @@ TorChat for purple (pigdin/finch):
 5. cp ../../bin/libpurpletorchat.so ~/.purple/plugins/
 6. run pidgin/finch
 
+To prevent random users from contacting you,
+open ~/.purple/blist.xml, find this account in <privacy>
+tag and set mode='5'.
+
