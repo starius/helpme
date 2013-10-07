@@ -37,3 +37,6 @@ How to send private message (PM) in OA:
 
 r_ignorehwgamma - color balance, brightness
 
+cg_marks "0" no railgun traces on walls
+scr_conspeed "100" instant console
+
