@@ -1029,3 +1029,6 @@ wget -N -t 14 -nd http://downloads.sourceforge.net/scarangel/ipfilter.rar
 Windows change MTU: http://www.dslreports.com/drtcp
 Windows print to PDF: http://www.pdf995.com/download.html
 
+git commit --interactive
+http://git-scm.com/book/en/Git-Tools-Interactive-Staging
+
