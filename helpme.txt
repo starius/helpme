@@ -1040,3 +1040,8 @@ online co-draw:
 http://cosketch.com
 http://flockdraw.com DOWN
 
+CUPS always opening UDP port 631 on all interfaces:
+/etc/cups/cupsd.conf
+Change 'Browsing On' to 'Browsing Off' and restart
+http://bugs.debian.org/cgi-bin/bugreport.cgi?bug=644144
+
