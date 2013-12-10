@@ -1045,3 +1045,7 @@ CUPS always opening UDP port 631 on all interfaces:
 Change 'Browsing On' to 'Browsing Off' and restart
 http://bugs.debian.org/cgi-bin/bugreport.cgi?bug=644144
 
+Allow non-root processes bind to "privileged" ports (<1024):
+# apt-get install libcap2-bin
+# setcap 'cap_net_bind_service=+ep' /path/to/prog
+
