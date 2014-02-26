@@ -997,6 +997,10 @@ extract the files from rar archive, non-ASCII folder name or filename on linux:
 # apt-get install unrar
 $ unrar e file.rar
 
+solid archive with best compression level
+$ rar -m5 -s a.rar file1.c file2.c
+$ 7z -ms=on -mx=9 a a.7z file1.c file2.c
+
 How to strip JPEG metadata:
 convert -strip
 exiftool -all= *.jpg
