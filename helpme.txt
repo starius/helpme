@@ -1069,3 +1069,9 @@ Allow non-root processes bind to "privileged" ports (<1024):
 # apt-get install libcap2-bin
 # setcap 'cap_net_bind_service=+ep' /path/to/prog
 
+how to clear cache in linux:
+$ sudo blockdev --flushbufs /dev/sdXY
+    (one device)
+$ sync ; sudo sh -c 'echo 3 > /proc/sys/vm/drop_caches'
+    (all caches)
+
