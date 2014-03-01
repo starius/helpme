@@ -6,6 +6,9 @@
 
     в /etc/udev!!! /lib/udev/rules.d/50-udev-default.rules -- MODE="0660"
 
+~/.ssh/config:
+ForwardX11Trusted no
+
 IDS. Intrusion detection system
 ===============================
 rkhunter --check
