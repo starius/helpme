@@ -996,6 +996,9 @@ sg - execute command as different group ID
 
 haproxy agains DoS: http://haproxy.1wt.eu/download/1.3/examples/antidos.cfg
 
+redirect TCP connection (userspace):
+rinetd
+
 extract the files from rar archive, non-ASCII folder name or filename on linux:
 # apt-get install unrar
 $ unrar e file.rar
