@@ -1001,6 +1001,7 @@ redirect TCP connection (userspace):
 rinetd
 
 extract the files from rar archive, non-ASCII folder name or filename on linux:
+# apt-get remove unrar-free
 # apt-get install unrar
 $ unrar e file.rar
 
