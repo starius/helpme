@@ -1,4 +1,3 @@
--P INPUT DROP
--P FORWARD DROP
--P OUTPUT ACCEPT
--A INPUT -m state --state NEW,ESTABLISHED -j ACCEPT
+iptables -P INPUT DROP
+iptables -P FORWARD DROP
+iptables -A INPUT -m state --state NEW,ESTABLISHED -j ACCEPT
