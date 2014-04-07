@@ -613,6 +613,11 @@ wheezy:
     https://lists.debian.org/debian-user/2012/12/msg00671.html
  * update-grub
 
+grub: change default menu item selected
+* /etc/default/grub
+* GRUB_DEFAULT=<0-based number>
+* update-grub
+
 Mouse -> Touchpad -> Disable mouse when typing
 
 aptitude install vim tmux screen bash-completion nginx etckeeper sudo mercurial git
