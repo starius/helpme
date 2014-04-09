@@ -961,6 +961,8 @@ init scripts in debian:
  * Starting with Debian 6.0, the insserv command is used instead,
    if dependency-based booting is enabled:
    # insserv myd
+ * prevent service from autorun:
+   # update-rc.d myd disable
 
 Redo service installation: # insserv -r myd
 
