@@ -9,6 +9,8 @@
 ~/.ssh/config:
 ForwardX11Trusted no
 
+xvfb: fake X-server to run GUI apps without real X-server
+
 IDS. Intrusion detection system
 ===============================
 rkhunter --check
