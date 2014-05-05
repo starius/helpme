@@ -789,6 +789,9 @@ Disable user list in gnome gdm greeter:
 /etc/gdm3/greeter.gsettings
 uncomment disable-user-list=true
 
+Set default session manager in GDM3 (Gnome)
+# update-alternatives --config x-session-manager
+
 nrg <-> iso:
 http://www.opennet.ru/tips/info/1819.shtml
  * nrg to iso:
