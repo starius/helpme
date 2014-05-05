@@ -785,6 +785,10 @@ Hide user from login screen:
  [greeter]
  Exclude=nobody,admin,reception
 
+Disable user list in gnome gdm greeter:
+/etc/gdm3/greeter.gsettings
+uncomment disable-user-list=true
+
 nrg <-> iso:
 http://www.opennet.ru/tips/info/1819.shtml
  * nrg to iso:
