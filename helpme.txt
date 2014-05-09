@@ -14,6 +14,9 @@ xvfb: fake X-server to run GUI apps without real X-server
 Resize window in xfce:
 $ xdotool windowsize $(xdotool search "Tor Browser"|tail -1) 1000 660
 
+Layout indicator for xfce:
+xfce4-xkb-plugin
+
 IDS. Intrusion detection system
 ===============================
 rkhunter --check
