@@ -890,6 +890,12 @@ http://code.google.com/p/logkeys/wiki/Documentation#Usage_how-to
    ENABLED=1
    DEVICE=/dev/input/eventX
 
+X-Server is too trusting.
+Rootless keylogger:
+$ xinput list
+$ xinput test id
+http://theinvisiblethings.blogspot.com.ar/2011/04/linux-security-circus-on-gui-isolation.httheml
+
 network audio system + mplayer + ssh:   sound
  * install packages "nas", "oss-compat" on all machines
  * ssh-forward port 8008 of "master" machine to 8000 of "audio" machine
