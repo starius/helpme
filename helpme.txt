@@ -781,6 +781,7 @@ Close window (do not detach tmux)
 SSH through tor/onion:
 -o ProxyCommand="/bin/nc -X 5 -x localhost:9050 %h %p"
 ProxyCommand /bin/nc -X 5 -x localhost:9050 %h %p
+apt-get install netcat-openbsd
 
 fix ssh connect lag after debug1: SSH2_MSG_SERVICE_ACCEPT received
 $ vi /etc/ssh/sshd_config
