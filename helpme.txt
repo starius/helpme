@@ -6,6 +6,8 @@
 
     в /etc/udev!!! /lib/udev/rules.d/50-udev-default.rules -- MODE="0660"
 
+uninstall geoclue
+
 ~/.ssh/config:
 ForwardX11Trusted no
 
