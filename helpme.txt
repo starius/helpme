@@ -694,6 +694,9 @@ Copy NetworkManager settings, connections and wireless passwords:
  * ~/.gconf/system/networking
  * ~/.gnome2/keyrings
 
+NetworkManager nmcli commands:
+http://linux-commands-examples.com/nmcli
+
 Have you ever wanted to share an internet connection in Ubuntu?
  * Install dnsmasq on your computer. (On Ubuntu, you will want to install the dnsmasq-base package.)
  * Make sure your WAN connection is all configured (e.g. with DHCP or a static address) and working.
