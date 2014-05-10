@@ -1060,6 +1060,9 @@ convert -contrast-stretch '5x20%'
 tar --numeric-owner
 mat
 test: tar -tvf 1.tar.gz
+Extract embedded thumbnail from jpeg:
+$ exiftool -b -ThumbnailImage Cateyes.jpg > Cateyes.thumb.jpg
+http://www.aldeid.com/wiki/Exiftool#Embedded_thumbnail_in_jpeg
 
 inline diff:
 $ wdiff -t 1.txt 2.txt
