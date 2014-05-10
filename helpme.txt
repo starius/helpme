@@ -1135,3 +1135,7 @@ electrum change gap limit
 Linux: get username by id
 $ getent passwd 1000
 
+ifenslave - Attach and detach slave network devices to a bonding device
+The following example shows how to setup a bonding device and enslave
+two real Ethernet devices to it
+
