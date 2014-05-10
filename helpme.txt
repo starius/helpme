@@ -325,6 +325,7 @@ sudo aptitude install preload
 лучше выбрать модуль Expo и рисование огнем
 
 tmpfs /tmp tmpfs defaults 0 0
+tmpfs /tmp tmpfs defaults,size=2g 0 0
 
 Ограничение использования памяти, количества процессов и т.д.:
     /etc/security/limits.conf
