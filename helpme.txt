@@ -1126,6 +1126,8 @@ $ sudo blockdev --flushbufs /dev/sdXY
     (one device)
 $ sync ; sudo sh -c 'echo 3 > /proc/sys/vm/drop_caches'
     (all caches)
+drop disk cache:
+# echo 3 > /proc/sys/vm/drop_caches
 
 electrum change gap limit
 >>> wallet.storage.put('gap_limit',100)
