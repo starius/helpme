@@ -1058,6 +1058,8 @@ convert -auto-orient
 convert -contrast-stretch '5x20%'
 
 tar --numeric-owner
+mat
+test: tar -tvf 1.tar.gz
 
 inline diff:
 $ wdiff -t 1.txt 2.txt
