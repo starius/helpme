@@ -6,6 +6,9 @@
 
     в /etc/udev!!! /lib/udev/rules.d/50-udev-default.rules -- MODE="0660"
 
+sudoedit /etc/locale.conf
+    LANG="en_US.UTF-8"
+
 uninstall geoclue
 
 ~/.ssh/config:
