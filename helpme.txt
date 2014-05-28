@@ -25,6 +25,13 @@ ReachableAddresses *:9001, reject *:*
 Layout indicator for xfce:
 xfce4-xkb-plugin
 
+/etc/default/keyboard
+    XKBMODEL="pc105"
+    XKBLAYOUT="us,ru"
+    XKBVARIANT=""
+    XKBOPTIONS="grp:rctrl_rshift_toggle"
+    BACKSPACE="guess"
+
 IDS. Intrusion detection system
 ===============================
 rkhunter --check
