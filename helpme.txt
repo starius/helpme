@@ -532,6 +532,7 @@ df -hTP
 vim
     :%!fold -s -w 80
     set ve=all
+    :e ++enc=cp1251
 
 find . -type d -exec chmod 755 {} \;
 
