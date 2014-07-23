@@ -31,6 +31,9 @@ xfce4-xkb-plugin
     XKBVARIANT=""
     XKBOPTIONS="grp:rctrl_rshift_toggle"
     BACKSPACE="guess"
+# dpkg-reconfigure console-data
+# dpkg-reconfigure keyboard-configuration
+# service keyboard-setup restart
 
 IDS. Intrusion detection system
 ===============================
