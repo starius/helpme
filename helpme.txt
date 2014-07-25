@@ -73,6 +73,9 @@ After installation:
   * add Russian
   * switch language: Shift + Ctrl
 
+Touchpad tap-to-click:
+$ synclient TapButton1=1 LBCornerButton=2 RBCornerButton=3 MaxTapTime=140 SingleTapTimeout=140 MaxDoubleTapTime=140
+
 cron-apt -- automatic security updates
 
 Google encrypted chrome plugin:
