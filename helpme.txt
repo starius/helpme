@@ -1171,3 +1171,10 @@ cclive ~ youtube-dl
 
 dieharder - random number test
 
+arm config:
+$ tor --hash-password 'password'
+copy and paste result to /etc/tor/torrc
+edit ~/.arm/armrc:
+    startup.controlPassword password
+    features.graph.bw.transferInBytes true
+
