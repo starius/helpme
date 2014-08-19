@@ -516,6 +516,14 @@ echo 10 > /proc/sys/vm/swappiness
 или прописать в sysctl.conf
 vm.swappiness=10
 
+swap in file:
+# dd if=/dev/zero of=/swapfile bs=1024 count=1048576
+# mkswap -f /swapfile
+# swapon /swapfile
+/etc/fstab:
+/swapfile   none   swap   sw 0 0
+https://www.chunkhost.com/help/swap
+
 gdb: catch throw
 gdb non-interactive mode: gdb -batch -x script.gdb --args ...
 
