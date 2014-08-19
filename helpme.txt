@@ -348,6 +348,7 @@ tmpfs /tmp tmpfs defaults,size=2g 0 0
 
 Ограничение использования памяти, количества процессов и т.д.:
     /etc/security/limits.conf
+add "session required pam_limits.so" to /etc/pam.d/common-session*
 
 XEN - виртуальная машина без потерь
 
