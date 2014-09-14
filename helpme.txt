@@ -369,6 +369,8 @@ VirtualBox общая папка
 mount -t vboxsf <FolderName> /home/test/obmen
 Пример: sudo mount -t vboxsf Portable /home/boris/Portable/
 Пример: sudo mount -t vboxsf DATA /D
+/etc/fstab:
+<name_of_share>   /path/to/mountpoint   vboxsf   <options>  0   0
 
 Автозапуск программ при старте системы:
     Система - Параметры - Запускаемые приложения
