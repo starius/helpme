@@ -1194,3 +1194,12 @@ edit ~/.arm/armrc:
     startup.controlPassword password
     features.graph.bw.transferInBytes true
 
+anti-ddos:
+http://habrahabr.ru/post/236771/
+tail -f /var/log/nginx/nginx.access.log | cut -d ' ' -f 1 | logtop
+grep "&key=" /var/log/nginx/nginx.access.log | cut -d ' ' -f 1 | sort | uniq -c | sort -n | tail -n 30
+Cколько коннектов на 80 порт: netstat -na | grep ":80\ " | wc -l
+На какой домен чаще всего идут запросы: tcpdump -npi eth0 port domain
+С какого ip сколько запросов netstat -ntu | awk '{print $5}'| cut -d: -f1 | sort | uniq -c | sort -nr | more
+Нагрузка на канал ftop -i eth0 -B
+
