@@ -399,6 +399,11 @@ sudo aptitude install dkms
 wine
 PlayOnLinux
 
+binfmt-support allows to run EXE files transparently:
+$ ./1.exe
+    instead of
+$ wine 1.exe
+
 Geany
 
 xampp
