@@ -1203,3 +1203,6 @@ Cколько коннектов на 80 порт: netstat -na | grep ":80\ " | 
 С какого ip сколько запросов netstat -ntu | awk '{print $5}'| cut -d: -f1 | sort | uniq -c | sort -nr | more
 Нагрузка на канал ftop -i eth0 -B
 
+chackinstall / mkdir: cannot create directory
+    checkinstall --fstrans=no
+
