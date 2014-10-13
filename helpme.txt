@@ -514,6 +514,8 @@ update-alternatives --install /usr/bin/g++ g++ /usr/bin/g++-4.5 20
 pm-suspend
 
 valgrind --callgrind to see what is taking CPU
+strace - trace system calls
+ltrace - trace library calls
 
 За это отвечает параметр swapinnes, чем он больше,
 тем чаще система пишет в своп,
