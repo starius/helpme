@@ -1208,3 +1208,9 @@ Cколько коннектов на 80 порт: netstat -na | grep ":80\ " | 
 chackinstall / mkdir: cannot create directory
     checkinstall --fstrans=no
 
+docker GUI:
+http://www.jann.cc/2014/09/06/sandboxing_proprietary_applications_with_docker.html
+
+colored git:
+$ git config --global color.ui auto
+
