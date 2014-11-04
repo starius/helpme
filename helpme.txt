@@ -1214,3 +1214,31 @@ http://www.jann.cc/2014/09/06/sandboxing_proprietary_applications_with_docker.ht
 colored git:
 $ git config --global color.ui auto
 
+uwsgi, django: /etc/uwsgi/apps-available/site.ini
+    [uwsgi]
+    uid = user
+    gid = user
+    socket = /tmp/site.sock
+    plugins = http, python
+    chdir = /path/to/site/dir
+    wsgi-file = project/wsgi.py
+    chmod-socket = 666
+django, nginx:
+    upstream site {
+        server unix:///tmp/site.sock;
+    }
+    server {
+        location /static/admin/ {
+            alias /usr/lib/python2.7/dist-packages/django/contrib/admin/static/admin/;
+            expires 7d;
+        }
+        location /static/ {
+            alias /path/to/static/
+            expires 7d;
+        }
+        location / {
+            uwsgi_pass  site;
+            include     uwsgi_params;
+        }
+    }
+
