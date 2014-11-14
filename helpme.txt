@@ -1244,3 +1244,6 @@ django, nginx:
         }
     }
 
+Domain info:
+$ dig -t srv xxx.xx
+
