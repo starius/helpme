@@ -1214,6 +1214,8 @@ http://www.jann.cc/2014/09/06/sandboxing_proprietary_applications_with_docker.ht
 colored git:
 $ git config --global color.ui auto
 
+install python-flup
+install uwsgi-plugin-python
 uwsgi, django: /etc/uwsgi/apps-available/site.ini
     [uwsgi]
     uid = user
