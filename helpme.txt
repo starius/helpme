@@ -11,6 +11,10 @@ sudoedit /etc/locale.conf
 
 uninstall geoclue
 
+Automatic security updates:
+# apt-get install unattended-upgrades apt-listchanges
+# dpkg-reconfigure -plow unattended-upgrades
+
 ~/.ssh/config:
 ForwardX11Trusted no
 
