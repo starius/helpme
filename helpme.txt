@@ -1251,3 +1251,6 @@ django, nginx:
 Domain info:
 $ dig -t srv xxx.xx
 
+Multiple Tor server instances:
+https://www.torservers.net/wiki/setup/server#multiple_tor_processes
+
