@@ -1254,3 +1254,8 @@ $ dig -t srv xxx.xx
 Multiple Tor server instances:
 https://www.torservers.net/wiki/setup/server#multiple_tor_processes
 
+Fake personal data generator:
+https://github.com/joke2k/Faker
+# pip install fake-factory
+$ PYTHONIOENCODING=UTF-8 faker -l 'ru_RU' | less
+
