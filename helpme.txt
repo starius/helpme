@@ -354,6 +354,9 @@ tmpfs /tmp tmpfs defaults,size=2g 0 0
     /etc/security/limits.conf
 add "session required pam_limits.so" to /etc/pam.d/common-session*
 
+Limit memory usage for a single Linux process:
+$ ulimit -Sv 500000     # Set ~500 mb limit
+
 XEN - виртуальная машина без потерь
 
 убить процесс
