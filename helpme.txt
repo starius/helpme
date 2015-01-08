@@ -514,6 +514,9 @@ shred -- fully delete file
 sudo ntpdate europe.pool.ntp.org
 tlsdate --dont-set-clock --showtime
 
+traceroute for specific TCP port:
+$ tcptraceroute host port
+
 update-alternatives --install /usr/bin/g++ g++ /usr/bin/g++-4.5 20
 
 открытые порты: netstat -lpn
