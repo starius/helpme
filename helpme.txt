@@ -1265,3 +1265,9 @@ https://github.com/joke2k/Faker
 # pip install fake-factory
 $ PYTHONIOENCODING=UTF-8 faker -l 'ru_RU' | less
 
+Decrypt using openssl from command line:
+$ openssl enc -aes-128-ctr -d -in input -out output -K key -iv iv
+    input   -- name of input file. The file must not contain IV
+    output  -- output file
+    key     -- key (hex)
+    IV      -- IV (hex)
