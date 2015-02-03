@@ -620,6 +620,8 @@ mplayer:
     enhance volume: -af volume=10.1:0
     framebuffer: -vo fbdev2 -zoom -xy 1024
 
+    mencoder tv:// -tv device=/dev/video0 -nosound -ovc lavc -o foo.avi
+
 vlc external file:
 $ vlc video.mkv --input-slave audio.mka
 
