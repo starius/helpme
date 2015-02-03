@@ -1051,6 +1051,9 @@ bitbucket2github
 Make git master HEAD point to current HEAD of branch:
 $ git update-ref refs/heads/master HEAD
 
+Git, show commit date in `git log`:
+$ git log --pretty=fuller
+
 bash range:
 for i in `seq 1 $last`; do echo $i; done
 
