@@ -1279,3 +1279,13 @@ $ openssl enc -aes-128-ctr -d -in input -out output -K key -iv iv
     output  -- output file
     key     -- key (hex)
     IV      -- IV (hex)
+
+Use backup tool duplicity with custom port and identity file:
+$ cat .ssh/config
+Host backup-host
+User user
+HostName 1.2.3.4
+IdentityFile ~/.ssh/identity-file
+Port 12345
+$ duplicity --rsync-options "--rsh='ssh -oBatchMode=yes'" \
+    source rsync://backup-host//path/to/backup
