@@ -1059,6 +1059,13 @@ $ git update-ref refs/heads/master HEAD
 Git, show commit date in `git log`:
 $ git log --pretty=fuller
 
+Git, move commits from detached "no branch" to master branch:
+http://stackoverflow.com/a/8953246
+$ git branch temp
+$ git checkout master # or any other branch
+$ git merge temp
+$ git branch -d temp
+
 bash range:
 for i in `seq 1 $last`; do echo $i; done
 
