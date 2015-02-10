@@ -1296,3 +1296,6 @@ IdentityFile ~/.ssh/identity-file
 Port 12345
 $ duplicity --rsync-options "--rsh='ssh -oBatchMode=yes'" \
     source rsync://backup-host//path/to/backup
+
+Avoiding tests when building Debian packages:
+$ DEB_BUILD_OPTIONS=nocheck debuild
