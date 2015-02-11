@@ -1299,3 +1299,6 @@ $ duplicity --rsync-options "--rsh='ssh -oBatchMode=yes'" \
 
 Avoiding tests when building Debian packages:
 $ DEB_BUILD_OPTIONS=nocheck debuild
+
+Debian packaging a simple already-compiled program:
+https://ubuntuforums.org/showthread.php?t=910717
