@@ -900,6 +900,8 @@ http://www.gnupg.org/gph/en/manual.html
    and to import them again:
     gpg --import secret.key
 GPG cheatsheet http://irtfweb.ifa.hawaii.edu/~lockhart/gpg/gpg-cs.html
+GPG encrypt and sign:
+$ gpg --armor --encrypt --sign -r alice@alice.com file.txt
 
 create debian packages:
  * https://wiki.ubuntu.com/PackagingGuide/Complete
