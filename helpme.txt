@@ -1068,6 +1068,9 @@ $ git checkout master # or any other branch
 $ git merge temp
 $ git branch -d temp
 
+Github, How to Rebase a Pull Request:
+https://github.com/edx/edx-platform/wiki/How-to-Rebase-a-Pull-Request
+
 bash range:
 for i in `seq 1 $last`; do echo $i; done
 
