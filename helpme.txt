@@ -1310,3 +1310,14 @@ https://ubuntuforums.org/showthread.php?t=910717
 
 FigTree show tree without branch lengths:
 Trees -> Select "Transform branches"
+
+NCBI genomes in ASN format:
+Download genomes here: ftp://ftp.ncbi.nlm.nih.gov/genomes
+Read https://www.ncbi.nlm.nih.gov/data_specs/NCBI_data_conversion.html
+Download NCBI_all.asn: http://ncbi.nlm.nih.gov/data_specs/asn/NCBI_all.asn
+Download datatool: ftp://ftp.ncbi.nlm.nih.gov/toolbox/ncbi_tools++/BIN/CURRENT/datatool
+Convert 1.asn to 1.json:
+$ datatool -m NCBI_all.asn -v 1.asn -pj 1.json
+Convert 1.asn to 1.xml:
+$ datatool -m NCBI_all.asn -v 1.asn -px 1.xml
+Use "-" instead of output filename to output to stdout
