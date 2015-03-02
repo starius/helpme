@@ -1307,3 +1307,6 @@ $ DEB_BUILD_OPTIONS=nocheck debuild
 
 Debian packaging a simple already-compiled program:
 https://ubuntuforums.org/showthread.php?t=910717
+
+FigTree show tree without branch lengths:
+Trees -> Select "Transform branches"
