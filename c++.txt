@@ -40,3 +40,4 @@ Caller graphs and profiling:
     valgrind --tool=callgrind
     kcachegrind for view
 
+Programs with type errors will not even compile, much less run.
