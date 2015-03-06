@@ -41,3 +41,13 @@ Caller graphs and profiling:
     kcachegrind for view
 
 Programs with type errors will not even compile, much less run.
+
+Rule of Three: http://stackoverflow.com/a/4172724
+If you need to explicitly declare either the destructor,
+copy constructor or copy assignment operator yourself,
+you probably need to explicitly declare all three of them.
+
+Rule of 4, 5: http://stackoverflow.com/a/4782927
+
+A a1;
+A a2 = a; // calls copy constructor, not assignment operator!
