@@ -272,9 +272,6 @@ hamachi-gui    hamachi-gui_0.9.5-0_i386-gutsy.deb
 alsamixer - звуковой микшер из-под командной строки
 нужно нажимать на М под "бегунками"
 
-Record capture sound from audio card:
-    audacity -> mixer toolbar (right top part of screen)
-
 localepurge -- удалить ненужные локализации из системы
 
 Anomos - анонимный bittorent
@@ -1146,6 +1143,15 @@ Grab the X11 display with ffmpeg via
 0.0 is display.screen number of your X11 server, same as the
 DISPLAY environment variable. 10 is the x-offset and 20 the y-offset
 for the grabbing.
+
+Grab one window with recordmydesktop:
+$ recordmydesktop --no-sound --windowid 0xa000001
+
+Get window ID:
+$ xwininfo -display :0
+
+Record capture sound from audio card:
+    audacity -> mixer toolbar (right top part of screen)
 
 Record webcam with ffmpeg:
     ffmpeg -f video4linux2 -r 25 -s 640x480 -i /dev/video0 out.avi
