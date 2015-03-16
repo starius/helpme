@@ -1161,6 +1161,9 @@ Record video from webcam and audio from mic:
     ffmpeg -f video4linux2 -r 25 -s 640x480 -i /dev/video0 \
         -f alsa -ac 2 -i hw:0,0 -acodec flac out.avi
 
+Crop video (ffmpeg):
+avconv -i in.mp4 -filter:v "crop=width:height:x:y" out.mp4
+
 ip0f:
     sudo p0f -i eth0 -d -u p0f-user -o /var/log/p0f.log
 
