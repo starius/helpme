@@ -1123,6 +1123,9 @@ ffmpeg -i in.mp4 -acodec copy -vcodec copy out.mp4    (removes most of metadata)
 convert -auto-orient
 convert -contrast-stretch '5x20%'
 
+How to produce PNG file without offset information when cropping:
+$ convert in.png -crop wxh+x+y +repage out.png
+
 tar --numeric-owner
 mat
 test: tar -tvf 1.tar.gz
