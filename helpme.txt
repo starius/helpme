@@ -1334,3 +1334,6 @@ $ datatool -m NCBI_all.asn -v 1.asn -pj 1.json
 Convert 1.asn to 1.xml:
 $ datatool -m NCBI_all.asn -v 1.asn -px 1.xml
 Use "-" instead of output filename to output to stdout
+
+Getting data from Pubmed:
+http://www.fredtrotter.com/2014/11/14/hacking-on-the-pubmed-api/
