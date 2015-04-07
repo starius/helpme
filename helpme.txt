@@ -586,6 +586,13 @@ stty -echo; read -p "enter: " p; echo $p | md5sum; stty echo;
 
 echo Привет |mail -s "test mail sent to external" bnagaev@gmail.com
 
+Setup SMTP daemon to use Gmail on Debian:
+Postfix: http://bit.ly/OcGopv (asynchronous)
+Exim4:   http://wiki.debian.org/GmailAndExim4 (synchronous)
+
+Postgres:
+http://www.cyberciti.biz/faq/howto-add-postgresql-user-account/
+
 grep reread -A 5 -B 5 -r . -n --color=always|less -R
  * -i ignore case
  * -v inverted
