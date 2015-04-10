@@ -24,9 +24,9 @@ This table is based on the [e-mail][1] from Sean Conner, sean@conman.org.
 | __len       |   *   |   *   |   *   |   #a       |                |
 | __eq        |   *   |   *   |   *   |   a == b   |                |
 | __lt        |   *   |   *   |   *   |   a < b    |                |
-| __le        |   *   |   *   |   *   |   a > b    |                |
-| __index     |   *   |   *   |   *   |   a = b[]  |  can be table  |
-| __newindex  |   *   |   *   |   *   |   a[] = b  |  can be table  |
+| __le        |   *   |   *   |   *   |   a <= b   |                |
+| __index     |   *   |   *   |   *   |   a = b[i] |  can be table  |
+| __newindex  |   *   |   *   |   *   |   a[i] = b |  can be table  |
 | __call      |   *   |   *   |   *   |   a()      |                |
 | __gc        |   *   |   *   |   *   |            |                |
 | __mode      |   *   |   *   |   *   |            |  string        |
