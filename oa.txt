@@ -35,6 +35,9 @@ How to send private message (PM) in OA:
     get client number of target user
 \tell client_number smth
 
+Show all the models as force (standard model):
+Setup -> Game options -> Force Player Models: ON
+
 r_ignorehwgamma - color balance, brightness
 
 cg_marks "0" no railgun traces on walls
