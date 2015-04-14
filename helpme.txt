@@ -1073,6 +1073,9 @@ $ git checkout master # or any other branch
 $ git merge temp
 $ git branch -d temp
 
+Git grep (search) in history:
+$ git log -G pattern
+
 Github, How to Rebase a Pull Request:
 https://github.com/edx/edx-platform/wiki/How-to-Rebase-a-Pull-Request
 
