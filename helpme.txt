@@ -1347,3 +1347,6 @@ Use "-" instead of output filename to output to stdout
 
 Getting data from Pubmed:
 http://www.fredtrotter.com/2014/11/14/hacking-on-the-pubmed-api/
+
+Find files with Windows line ends (CRLF):
+$ grep -IUlr $'\r'
