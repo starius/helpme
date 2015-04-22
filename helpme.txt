@@ -1350,3 +1350,6 @@ http://www.fredtrotter.com/2014/11/14/hacking-on-the-pubmed-api/
 
 Find files with Windows line ends (CRLF):
 $ grep -IUlr $'\r'
+
+Run virtualbox in separate X session:
+$ xinit /usr/bin/virtualbox $* -- :2
