@@ -11,6 +11,14 @@ sudoedit /etc/locale.conf
 
 uninstall geoclue
 
+Xscreensaver twang can hang, disabling whole screen.
+How to repair without rebooting and restarting X server:
+You should have tmux or other way to run commands in original
+X server.
+$ DISPLAY=:0.0 xscreensaver
+From another tmux tab:
+$ DISPLAY=:0.0 xscreensaver-command --lock
+
 Automatic security updates:
 # apt-get install unattended-upgrades apt-listchanges
 # dpkg-reconfigure -plow unattended-upgrades
