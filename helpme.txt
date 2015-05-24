@@ -1362,5 +1362,7 @@ $ grep -IUlr $'\r'
 Run virtualbox in separate X session:
 $ xinit /usr/bin/virtualbox $* -- :2
 
+x86 assembly:
+https://www.cs.virginia.edu/~evans/cs216/guides/x86.html
 x86 registers:
 https://www.cs.virginia.edu/~evans/cs216/guides/x86-registers.png
