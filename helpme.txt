@@ -1366,3 +1366,5 @@ x86 assembly:
 https://www.cs.virginia.edu/~evans/cs216/guides/x86.html
 x86 registers:
 https://www.cs.virginia.edu/~evans/cs216/guides/x86-registers.png
+x64 assembly:
+https://software.intel.com/en-us/articles/introduction-to-x64-assembly/
