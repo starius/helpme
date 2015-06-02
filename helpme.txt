@@ -442,6 +442,13 @@ http://linuxon1001p.blogspot.com/2010/03/fixing-wireless.html
 
 sudo apt-key adv --recv-keys --keyserver keyserver.ubuntu.com КЛЮЧ
 
+aptitude upgrade xxx
+    The following packages have been kept back:
+        xxx
+apt-get install xxx
+    The following extra packages will be installed:
+        xxx
+
 Монтируем:
     sudo mount -o loop /home/brun/iso.iso /media/cdrom0/
 Размонтируем:
