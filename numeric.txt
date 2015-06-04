@@ -1,0 +1,14 @@
+числовой - numeric
+состоит из чисел -  consists of numbers
+Example: числовая переменная - numeric variable
+
+численный - numerical
+работает с числами - uses numbers
+Example: численные методы - numerical methods
+
+What ABOUT "numeral"? It means a symbol representing a digit
+or number as a noun, and it means pertaining to denoting a
+number as an adjective. In both cases it's about how a number
+is written, rather than how it's handled.
+
+See http://permalink.gmane.org/gmane.comp.lang.lua.general/117145
