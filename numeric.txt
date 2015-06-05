@@ -12,3 +12,15 @@ number as an adjective. In both cases it's about how a number
 is written, rather than how it's handled.
 
 See http://permalink.gmane.org/gmane.comp.lang.lua.general/117145
+
+numeric = consisting entirely of numbers ("a numeric ID")
+numerical = involving numbers ("some numerical process")
+numeral = the written form of a single digit (e.g. 1 or one)
+digital = technically means numerical, but more commonly taken to mean
+"associated with computers"
+digit = the symbols used to represent numbers (i.e. the symbols 0, 1,
+2, 3, 4, 5, 6, 7, 8, 9), though it's also valid to refer to the digits
+of non-written numbers, e.g. "the third digit of my secret code is 4"
+(and this example phrase also implies that said code is numeric, else
+you'd say "third character" or (not really correctly) "third letter")
+digit also = finger or thumb, but this is less common
