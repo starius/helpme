@@ -1376,3 +1376,8 @@ https://www.cs.virginia.edu/~evans/cs216/guides/x86-registers.png
 x64 assembly:
 https://software.intel.com/en-us/articles/introduction-to-x64-assembly/
 http://www.cs.princeton.edu/courses/archive/spr11/cos217/lectures/15AssemblyFunctions.pdf
+
+Multitasking:
+Preemptive - system decides when to interrupt a task (OS threads)
+Cooperative - task itself decides when to interrupt (green threads, coroutines)
+http://www.on-time.com/rtos-32-docs/rtkernel-32/programming-manual/advanced-topics/preemptive-or-cooperative-multitasking.htm
