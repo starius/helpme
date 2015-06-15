@@ -1387,3 +1387,5 @@ Add packages:
 reprepro includedeb wheezy *.deb
 Remove packages:
 reprepro removematched wheezy '*'
+
+Reset guard node of tor: rm /var/lib/tor/state
