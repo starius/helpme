@@ -837,6 +837,9 @@ http://forums.debian.net/viewtopic.php?t=12497
         type pulse
     }
 
+Pulseaudio for multiple users, without system-mode daemon:
+http://billauer.co.il/blog/2014/01/pa-multiple-users/
+
 Generate sftp pub key from ssh pub key:
  $ ssh-keygen -e
 Change passphrase of the ssh private key:
