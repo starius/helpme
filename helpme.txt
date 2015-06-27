@@ -1097,6 +1097,11 @@ $ git log -G pattern
 Github, How to Rebase a Pull Request:
 https://github.com/edx/edx-platform/wiki/How-to-Rebase-a-Pull-Request
 
+GIT: how to change commit date and time:
+$ export GIT_AUTHOR_DATE='Sat Jun 27 22:56:03 MSK 2015'
+$ export GIT_COMMITTER_DATE='Sat Jun 27 22:56:03 MSK 2015'
+$ git commit --amend --reset-author
+
 bash range:
 for i in `seq 1 $last`; do echo $i; done
 
