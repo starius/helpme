@@ -51,3 +51,32 @@ Rule of 4, 5: http://stackoverflow.com/a/4782927
 
 A a1;
 A a2 = a; // calls copy constructor, not assignment operator!
+
+Matching against the function or method signature:
+
+    #include <string>
+    #include <iostream>
+
+    struct C {
+        double b(std::string a) {
+            return 2.5;
+        }
+    };
+
+    template<typename C, typename G, typename F>
+    struct Wrapper {
+    public:
+        typedef G (C::*M) (F);
+
+        template<M m>
+        struct Inner {
+            G operator()(C& r, F f) {
+                return ((&r)->*m)(f);
+            }
+        };
+    };
+
+    Wrapper<C, double, std::string>::Inner<&C::b> w;
+    double res = w (c, "A”);
+
+http://lua.2524044.n2.nabble.com/C-14-Wrapper-tp7668242p7668245.html
