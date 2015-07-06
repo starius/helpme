@@ -1402,3 +1402,7 @@ Remove packages:
 reprepro removematched wheezy '*'
 
 Reset guard node of tor: rm /var/lib/tor/state
+
+Run host system in QEMU:
+# qemu-system-x86_64 -enable-kvm -m 256 -daemonize -snapshot \
+    -drive cache=none,file=/dev/sda -usbdevice tablet
