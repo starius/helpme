@@ -1406,3 +1406,12 @@ Reset guard node of tor: rm /var/lib/tor/state
 Run host system in QEMU:
 # qemu-system-x86_64 -enable-kvm -m 256 -daemonize -snapshot \
     -drive cache=none,file=/dev/sda -usbdevice tablet
+
+Howto get root on Linux machine:
+ * grub
+  * if there is no menu, try Shift
+ * select target Linux installation
+ * press e
+ * find line starting with "linux", append "init=/bin/bash"
+  * replace "ro" woth "rw"
+ * Ctrl-X
