@@ -1075,6 +1075,12 @@ init scripts in debian:
 
 Redo service installation: # insserv -r myd
 
+Git.io: GitHub URL Shortener
+https://github.com/blog/985-git-io-github-url-shortener
+$ curl -i http://git.io -F "url=https://github.com/..."
+HTTP/1.1 201 Created
+Location: http://git.io/abc123
+
 Sync BitBucket and GitHub
 bitbucket2github
 
