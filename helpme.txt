@@ -1441,3 +1441,6 @@ Add to /etc/nginx/nginx.conf:
 
 Print SSL key info:
 $ openssl rsa -in file.key -text -noout
+
+Generate a certificate signing request (CSR) for an existing private key
+$ openssl req -out CSR.csr -key privateKey.key -new
