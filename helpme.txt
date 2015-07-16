@@ -1438,3 +1438,6 @@ Add to /etc/nginx/nginx.conf:
         ssl_prefer_server_ciphers on;
         ssl_session_cache shared:SSL:10m;
         ssl_session_timeout 10m;
+
+Print SSL key info:
+$ openssl rsa -in file.key -text -noout
