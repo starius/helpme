@@ -1421,3 +1421,7 @@ Howto get root on Linux machine:
  * find line starting with "linux", append "init=/bin/bash"
   * replace "ro" woth "rw"
  * Ctrl-X
+
+How to concatenate Free 90 days COMODO certificates:
+$ cat kiset_org.crt COMODORSADomainValidationSecureServerCA.crt \
+    COMODORSAAddTrustCA.crt AddTrustExternalCARoot.crt > all.crt
