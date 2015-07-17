@@ -1097,6 +1097,9 @@ $ git checkout master # or any other branch
 $ git merge temp
 $ git branch -d temp
 
+Unstage a file in git (mistaken "git add"):
+$ git reset HEAD file.cpp
+
 Git grep (search) in history:
 $ git log -G pattern
 
