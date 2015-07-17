@@ -1097,6 +1097,9 @@ $ git checkout master # or any other branch
 $ git merge temp
 $ git branch -d temp
 
+Unstage a file in git (mistaken "git add"):
+$ git reset HEAD file.cpp
+
 Git grep (search) in history:
 $ git log -G pattern
 
@@ -1107,6 +1110,12 @@ GIT: how to change commit date and time:
 $ export GIT_AUTHOR_DATE='Sat Jun 27 22:56:03 MSK 2015'
 $ export GIT_COMMITTER_DATE='Sat Jun 27 22:56:03 MSK 2015'
 $ git commit --amend --reset-author
+
+git commit --interactive
+http://git-scm.com/book/en/Git-Tools-Interactive-Staging
+
+colored git:
+$ git config --global color.ui auto
 
 bash range:
 for i in `seq 1 $last`; do echo $i; done
@@ -1225,9 +1234,6 @@ wget -N -t 14 -nd http://downloads.sourceforge.net/scarangel/ipfilter.rar
 Windows change MTU: http://www.dslreports.com/drtcp
 Windows print to PDF: http://www.pdf995.com/download.html
 
-git commit --interactive
-http://git-scm.com/book/en/Git-Tools-Interactive-Staging
-
 online co-draw:
 http://cosketch.com
 http://flockdraw.com DOWN
@@ -1297,9 +1303,6 @@ chackinstall / mkdir: cannot create directory
 
 docker GUI:
 http://www.jann.cc/2014/09/06/sandboxing_proprietary_applications_with_docker.html
-
-colored git:
-$ git config --global color.ui auto
 
 install python-flup
 install uwsgi-plugin-python
