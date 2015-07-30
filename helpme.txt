@@ -1447,3 +1447,6 @@ $ openssl req -out CSR.csr -sha256 -key privateKey.key -new
 
 awk tabs:
 $ awk -F $'\t'
+
+Edit Google Spreadsheets from Python:
+https://github.com/burnash/gspread
