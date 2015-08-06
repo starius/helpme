@@ -305,6 +305,11 @@ gedit
 настройка bash
 http://system-administrators.info/?p=1248
 
+Bash enable debug, crash on error in any command or pipe:
+$ set -x
+$ set -e
+$ set -u
+
 Подсказки при запуске неустановленных программ
 auto-apt
 
