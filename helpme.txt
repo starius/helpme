@@ -868,6 +868,15 @@ UseDNS no
 cron + tmux + irssi:
 @reboot tmux new -d irssi
 
+Sleep until next occurrence of specific time
+    difference=$(($(date -d "4:00" +%s) - $(date +%s)))
+    if [ $difference -lt 0 ]; then
+        sleep $((86400 + difference))
+    else
+        sleep $difference
+    fi
+http://unix.stackexchange.com/a/94548
+
 nvidia installer debian:
 http://gosha.me/node/126
  * apt-get install build-essential libc6-dev linux-headers-$(uname -r)
