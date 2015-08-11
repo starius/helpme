@@ -1455,3 +1455,5 @@ $ awk -F $'\t'
 
 Edit Google Spreadsheets from Python:
 https://github.com/burnash/gspread
+
+git clean -fdx
