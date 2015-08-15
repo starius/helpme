@@ -39,6 +39,7 @@ Show all the models as force (standard model):
 Setup -> Game options -> Force Player Models: ON
 
 r_ignorehwgamma - color balance, brightness
+r_overbrightbits 1 (either 1 or 0)
 
 cg_marks "0" no railgun traces on walls
 scr_conspeed "100" instant console
