@@ -32,6 +32,9 @@ xvfb-run --server-args="-noreset +extension RANDR" command
 Resize window in xfce:
 $ xdotool windowsize $(xdotool search "Tor Browser"|tail -1) 1000 660
 
+https://pdd.yandex.ru/ Fix de-anonymization (master email leak):
+Domain -> Edit DNS -> Edit SOA entry -> change xxx.yandex.ru
+
 Allow only standard Tor port:
 ReachableAddresses *:9001, reject *:*
 
