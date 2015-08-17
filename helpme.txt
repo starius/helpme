@@ -1446,6 +1446,8 @@ How to concatenate Free 90 days COMODO certificates:
 $ cat kiset_org.crt COMODORSADomainValidationSecureServerCA.crt \
     COMODORSAAddTrustCA.crt AddTrustExternalCARoot.crt > all.crt
 
+Cheap SSL cert.: sslcertificate.com
+
 Replace with custom DH parameters:
 # openssl dhparam -out /etc/nginx/dhparams.pem 2048
 Add to /etc/nginx/nginx.conf:
