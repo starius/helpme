@@ -1442,6 +1442,9 @@ Howto get root on Linux machine:
   * replace "ro" woth "rw"
  * Ctrl-X
 
+/etc/default/grub
+GRUB_TIMEOUT=0
+
 How to concatenate Free 90 days COMODO certificates:
 $ cat kiset_org.crt COMODORSADomainValidationSecureServerCA.crt \
     COMODORSAAddTrustCA.crt AddTrustExternalCARoot.crt > all.crt
