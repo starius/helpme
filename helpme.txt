@@ -1,3 +1,6 @@
+Indispensable UNIX utilities:
+http://www.volkerschatz.com/unix/uutils.html
+
 Уязвимости убунты:
     настроить проводник Ubuntu (nautilus)
         Права - Параметры
