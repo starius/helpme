@@ -1480,3 +1480,6 @@ git clean -fdx
 
 Log what ld does: LD_DEBUG=all
 http://www.bnikolic.co.uk/blog/linux-ld-debug.html
+
+wget resume failed download:
+$ wget -c http://example.com/file.dat
