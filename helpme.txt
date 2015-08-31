@@ -1474,3 +1474,6 @@ Edit Google Spreadsheets from Python:
 https://github.com/burnash/gspread
 
 git clean -fdx
+
+Log what ld does: LD_DEBUG=all
+http://www.bnikolic.co.uk/blog/linux-ld-debug.html
