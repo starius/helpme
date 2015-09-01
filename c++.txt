@@ -85,3 +85,6 @@ How to fix the following error (autotools):
     /usr/include/c++/4.6/cstdlib:119:11: error: ‘::malloc’ has not been declared
 $ ac_cv_func_malloc_0_nonnull=yes ./configure ...
 https://stackoverflow.com/questions/14691089/
+
+Integer conversion rules:
+https://www.securecoding.cert.org/confluence/display/cplusplus/INT02-CPP.+Understand+integer+conversion+rules
