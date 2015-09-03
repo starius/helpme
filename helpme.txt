@@ -867,6 +867,10 @@ SSH through tor/onion:
 ProxyCommand /bin/nc -X 5 -x localhost:9050 %h %p
 apt-get install netcat-openbsd
 
+Dark web = onion/i2p sites.
+Deep web = not indexed by search engines like Google.
+https://www.ibtimes.co.uk/interpol-cryptocurrency-fight-bitcoin-crimes-dark-web-1518264
+
 fix ssh connect lag after debug1: SSH2_MSG_SERVICE_ACCEPT received
 $ vi /etc/ssh/sshd_config
 UseDNS no
