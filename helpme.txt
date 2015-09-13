@@ -123,6 +123,23 @@ aptitude
 
 dpkg --ignore-depends=libgcc1 -i gcc-4.3.deb
 
+$ dpkg -s lsof
+Package: lsof
+Status: install ok installed
+Priority: standard
+Section: utils
+Installed-Size: 420
+Maintainer: Norbert Tretkowski <nobse@debian.org>
+Architecture: amd64
+Version: 4.86+dfsg-1
+Depends: libc6 (>= 2.11), libperl4-corelibs-perl | perl (<< 5.12.3-7)
+Description: Utility to list open files
+ Lsof is a Unix-specific diagnostic tool.  Its name stands
+ for LiSt Open Files, and it does just that.  It lists
+ information about any files that are open, by processes
+ currently running on the system.
+Homepage: http://people.freebsd.org/~abe/
+
 To install .deb package and all its packages:
 # dpkg -i ...
 # apt-get -f install
