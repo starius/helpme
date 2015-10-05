@@ -1504,3 +1504,9 @@ http://www.bnikolic.co.uk/blog/linux-ld-debug.html
 
 wget resume failed download:
 $ wget -c http://example.com/file.dat
+
+core dump:
+$ ulimit -c unlimited
+$ crashing-program
+Segmentation fault (core dumped)
+$ cat /proc/sys/kernel/core_pattern
