@@ -1541,3 +1541,6 @@ http://linuxconfig.org/quick-vnc-server-client-setup-on-debian-linux-jessie-8
         x-terminal-emulator -geometry 80x24+10+10 -ls -title "$VNCDESKTOP Desktop" &
         x-window-manager &
         xfdesktop &
+
+$ cat /etc/network/interfaces:
+dns-nameservers 217.10.39.4 8.8.8.8
