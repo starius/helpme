@@ -1510,3 +1510,34 @@ $ ulimit -c unlimited
 $ crashing-program
 Segmentation fault (core dumped)
 $ cat /proc/sys/kernel/core_pattern
+
+Debian VNC server and client:
+http://linuxconfig.org/quick-vnc-server-client-setup-on-debian-linux-jessie-8
+
+    # apt-get install vnc4server
+
+    $ vnc4passwd
+    Password:
+    Verify:
+
+    $ vnc4server -geometry 800x600 -depth 24
+    New 'debian:1 (lubos)' desktop is debian:1
+
+    Creating default startup script /home/lubos/.vnc/xstartup
+    Starting applications specified in /home/lubos/.vnc/xstartup
+    Log file is /home/lubos/.vnc/debian:1.log
+
+    # apt-get install xvnc4viewer
+
+    $ xvnc4viewer 10.1.1.12:1
+
+    $ vnc4server -kill :1
+
+    ~/.vnc/xstartup:
+        [ -x /etc/vnc/xstartup ] && exec /etc/vnc/xstartup
+        [ -r $HOME/.Xresources ] && xrdb $HOME/.Xresources
+        xsetroot -solid grey
+        vncconfig -iconic &
+        x-terminal-emulator -geometry 80x24+10+10 -ls -title "$VNCDESKTOP Desktop" &
+        x-window-manager &
+        xfdesktop &
