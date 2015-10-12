@@ -1544,3 +1544,8 @@ http://linuxconfig.org/quick-vnc-server-client-setup-on-debian-linux-jessie-8
 
 $ cat /etc/network/interfaces:
 dns-nameservers 217.10.39.4 8.8.8.8
+
+TSV to Markdown:
+https://github.com/monochromegane/mdt
+http://www.tablesgenerator.com/markdown_tables
+https://pypi.python.org/pypi/tabulate
