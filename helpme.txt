@@ -1520,7 +1520,7 @@ http://linuxconfig.org/quick-vnc-server-client-setup-on-debian-linux-jessie-8
     Password:
     Verify:
 
-    $ vnc4server -geometry 800x600 -depth 24
+    $ vnc4server -geometry 800x600 -depth 24 -localhost
     New 'debian:1 (lubos)' desktop is debian:1
 
     Creating default startup script /home/lubos/.vnc/xstartup
