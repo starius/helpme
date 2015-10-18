@@ -1549,5 +1549,3 @@ TSV to Markdown:
 https://github.com/monochromegane/mdt
 http://www.tablesgenerator.com/markdown_tables
 https://pypi.python.org/pypi/tabulate
-
-Cryptogram Solver: http://rumkin.com/tools/cipher/cryptogram-solver.php
