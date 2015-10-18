@@ -1,0 +1,1 @@
+Cryptogram Solver: http://rumkin.com/tools/cipher/cryptogram-solver.php
