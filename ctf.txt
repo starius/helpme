@@ -1,1 +1,4 @@
 Cryptogram Solver: http://rumkin.com/tools/cipher/cryptogram-solver.php
+Reverse:
+Olly Debug (32-bit assembler level analysing debugger)
+IDA Hex-Rays (hosted multi-processor disassembler and debugger)
