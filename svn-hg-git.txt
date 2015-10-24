@@ -19,3 +19,11 @@ http://blogs.atlassian.com/2012/02/mercurial-vs-git-why-mercurial/
 Github pages:
 https://gist.github.com/833223
 
+SVN get current revision:
+$ svn info | grep "Revision" | awk '{print $2}'
+http://stackoverflow.com/a/1991555
+
+List all the files for a commit in Git:
+$ git diff-tree --no-commit-id --name-only -r bd61ad98
+$ git show --pretty="format:" --name-only bd61ad98
+http://stackoverflow.com/a/424142
