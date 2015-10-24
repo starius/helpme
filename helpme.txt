@@ -1510,6 +1510,11 @@ $ ulimit -c unlimited
 $ crashing-program
 Segmentation fault (core dumped)
 $ cat /proc/sys/kernel/core_pattern
+$ gdb crashing-program code.dump
+
+Make core dump of running process:
+$ gdb --pid 12345
+(gdb) generate-core-file
 
 Debian VNC server and client:
 http://linuxconfig.org/quick-vnc-server-client-setup-on-debian-linux-jessie-8
