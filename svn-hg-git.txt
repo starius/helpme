@@ -24,6 +24,4 @@ $ svn info | grep "Revision" | awk '{print $2}'
 http://stackoverflow.com/a/1991555
 
 List all the files for a commit in Git:
-$ git diff-tree --no-commit-id --name-only -r bd61ad98
-$ git show --pretty="format:" --name-only bd61ad98
-http://stackoverflow.com/a/424142
+$ git ls-tree -r --name-only <commit>
