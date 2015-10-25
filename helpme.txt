@@ -1557,3 +1557,6 @@ http://www.tablesgenerator.com/markdown_tables
 https://pypi.python.org/pypi/tabulate
 
 LC_ALL=C sort
+
+Ctrl + S    console freeze
+Ctrl + Q    console unfreeze
