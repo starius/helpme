@@ -1560,3 +1560,27 @@ LC_ALL=C sort
 
 Ctrl + S    console freeze
 Ctrl + Q    console unfreeze
+
+Upload Travis artifacts to GitHub:
+1. Create new GitHub account
+2. Invite it to the repository with write access.
+3. Generate OAuth token for the new account:
+   https://github.com/settings/tokens
+4. Install `gem install travis`
+   or clone https://github.com/travis-ci/travis.rb/
+   and run `bin/travis` (may ask to install dependencies)
+5. Run `travis setup releases`
+6. Edit .travis.yml:
+before_deploy:
+  - do something needed for deploying only
+  - export RELEASE_FILE=$(ls foo_*.tar.gz)
+deploy:
+  provider: releases
+  api_key:
+    secure: abcdef01...
+  file: "${RELEASE_FILE}"
+  skip_cleanup: true
+  on:
+    tags: true
+7*. How to not to hardcode "secure" string:
+http://stackoverflow.com/q/25916249/1293417
