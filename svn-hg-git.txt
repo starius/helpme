@@ -25,3 +25,8 @@ http://stackoverflow.com/a/1991555
 
 List all the files for a commit in Git:
 $ git ls-tree -r --name-only <commit>
+
+How to: Delete a remote Git tag
+$ git tag -d 12345
+$ git push origin :refs/tags/12345
+https://nathanhoad.net/how-to-delete-a-remote-git-tag
