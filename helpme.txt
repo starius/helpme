@@ -1573,14 +1573,17 @@ Upload Travis artifacts to GitHub:
 6. Edit .travis.yml:
 before_deploy:
   - do something needed for deploying only
-  - export RELEASE_FILE=$(ls foo_*.tar.gz)
 deploy:
   provider: releases
   api_key:
     secure: abcdef01...
-  file: "${RELEASE_FILE}"
+  file: "$(ls foo_*.tar.gz 2>/dev/null || echo README.md)"
   skip_cleanup: true
   on:
     tags: true
 7*. How to not to hardcode "secure" string:
 http://stackoverflow.com/q/25916249/1293417
+8*. Multiple files (and various number of files):
+    file:
+      - "$(ls foo_*.tar.gz 2>/dev/null || echo README.md)"
+      - "$(ls bar_*.tar.gz 2>/dev/null || echo README.md)"
