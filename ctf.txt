@@ -6,3 +6,27 @@ IDA Hex-Rays (hosted multi-processor disassembler and debugger)
 Other useful tools:
 Audacity (free open source software for editing sounds)
 Stegsolve.jar (analyze images for hidden data)
+
+--WEB--
+articles: http codes, http
+HTTP METHODS (GET, POST etc)
+Problems with redirection: use nc (change location)
+
+Search ports: nmap
+default port 80 (can be seen in browser)
+
+PHP: php.net, php.su
+
+Edit cookie
+
+Interesting files:
+- somesite.net/robots.txt
+- somesite.net/favicon.ico
+- sitemap.xml
+
+XSS (cross site scripting)
+
+SQL-injection
+login="OR""="
+sqlmap.py
+$ python sqlmap.py -u "url" --dump --data "login=123"
