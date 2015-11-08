@@ -30,3 +30,8 @@ How to: Delete a remote Git tag
 $ git tag -d 12345
 $ git push origin :refs/tags/12345
 https://nathanhoad.net/how-to-delete-a-remote-git-tag
+
+Git: checkout remote branch
+$ git fetch
+$ git checkout my-branch
+Checkout remote Git branch
