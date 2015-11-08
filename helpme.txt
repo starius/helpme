@@ -1408,6 +1408,8 @@ Avoiding tests when building Debian packages:
 $ DEB_BUILD_OPTIONS=nocheck debuild
 Avoiding cleaning, tests and signing when building Debian packages:
 $ DEB_BUILD_OPTIONS=nocheck debuild -us -uc -nc
+Build debug version of Debian package:
+$ DEB_BUILD_OPTIONS='nostrip noopt debug' debuild
 
 Debian packaging a simple already-compiled program:
 https://ubuntuforums.org/showthread.php?t=910717
