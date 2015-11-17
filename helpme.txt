@@ -1591,3 +1591,6 @@ http://stackoverflow.com/q/25916249/1293417
     file:
       - "$(ls foo_*.tar.gz 2>/dev/null || echo README.md)"
       - "$(ls bar_*.tar.gz 2>/dev/null || echo README.md)"
+
+Add search.disconnect.me to normal Firefox:
+https://addons.mozilla.org/en-us/firefox/addon/disconnectsearch/
