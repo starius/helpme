@@ -1594,3 +1594,6 @@ http://stackoverflow.com/q/25916249/1293417
 
 Add search.disconnect.me to normal Firefox:
 https://addons.mozilla.org/en-us/firefox/addon/disconnectsearch/
+
+Windows batch file to build Lua from source:
+https://github.com/Tieske/luawinmake
