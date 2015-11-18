@@ -1597,3 +1597,9 @@ https://addons.mozilla.org/en-us/firefox/addon/disconnectsearch/
 
 Windows batch file to build Lua from source:
 https://github.com/Tieske/luawinmake
+
+Q-digest:
+https://github.com/dhruvbird/q-digest
+
+Longest biased interval = longest non-negative sub array
+http://stackoverflow.com/a/21714488
