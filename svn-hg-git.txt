@@ -35,3 +35,6 @@ Git: checkout remote branch
 $ git fetch
 $ git checkout my-branch
 Checkout remote Git branch
+
+Recovering a commit from Github’s Reflog:
+https://objectpartners.com/2014/02/11/recovering-a-commit-from-githubs-reflog/
