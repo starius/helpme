@@ -983,6 +983,10 @@ cheat system time inside virtualbox:
  * Guest:
     # date MMDDhhmm
 
+Timestamp <-> (year, month, day)
+http://ptspts.blogspot.de/2009/11/how-to-convert-unix-timestamp-to-civil.html
+http://pubs.opengroup.org/onlinepubs/9699919799/basedefs/V1_chap04.html#tag_04_15
+
 Convert Unix Timestamp to a Date:
 $ date -d@1330246800
 
