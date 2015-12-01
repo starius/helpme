@@ -2,7 +2,7 @@
 
 This table is based on the [e-mail][1] from Sean Conner, sean@conman.org.
 
-[1]: http://lua.2524044.n2.nabble.com/Fast-metamethods-for-User
+[1]: http://lua-users.org/lists/lua-l/2015-04/msg00033.html
 
 |  key        |  5.1  |  5.2  |  5.3  |  function  |  type          |
 | ----------- | ----- | ----- | ----- | ---------- | -------------- |
