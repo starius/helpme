@@ -1609,3 +1609,6 @@ https://github.com/dhruvbird/q-digest
 
 Longest biased interval = longest non-negative sub array
 http://stackoverflow.com/a/21714488
+
+mkdir can be used as a mutex:
+http://wiki.bash-hackers.org/howto/mutex
