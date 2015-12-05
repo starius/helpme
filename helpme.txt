@@ -332,6 +332,7 @@ Bash enable debug, crash on error in any command or pipe:
 $ set -x  # print all commands
 $ set -e  # exit if a subcommand exits with non-zero
 $ set -u  # exit if unset variable is used
+$ set -f  # Disable pathname expansion
 
 Подсказки при запуске неустановленных программ
 auto-apt
