@@ -784,6 +784,14 @@ Copy apt cache to another computer:
  * dpkg --get-selections | scp | dpkg --set-selections
  * apt-get dselect-upgrade
 
+CPU:
+$ lscpu
+Architecture:          x86_64
+CPU op-mode(s):        32-bit, 64-bit
+Byte Order:            Little Endian
+CPU(s):                4
+...
+
 GPU:
  * glxinfo | grep renderer
  * cat /var/log/XFree86.0.log | grep "GPU detected"
