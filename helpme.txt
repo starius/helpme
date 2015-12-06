@@ -1620,3 +1620,7 @@ http://stackoverflow.com/a/21714488
 
 mkdir can be used as a mutex:
 http://wiki.bash-hackers.org/howto/mutex
+
+luajit: enable profiling
+    -jp=v
+    see doc/ext_profiler.html
