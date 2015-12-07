@@ -88,3 +88,6 @@ https://stackoverflow.com/questions/14691089/
 
 Integer conversion rules:
 https://www.securecoding.cert.org/confluence/display/cplusplus/INT02-CPP.+Understand+integer+conversion+rules
+
+Null Pointer Dereferencing Causes Undefined Behavior:
+https://software.intel.com/en-us/blogs/2015/04/20/null-pointer-dereferencing-causes-undefined-behavior
