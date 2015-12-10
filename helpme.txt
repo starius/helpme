@@ -1131,6 +1131,9 @@ init scripts in debian:
 
 Redo service installation: # insserv -r myd
 
+Public SSH key of a GitHub user:
+https://github.com/torvalds.keys
+
 Git.io: GitHub URL Shortener
 https://github.com/blog/985-git-io-github-url-shortener
 $ curl -i http://git.io -F "url=https://github.com/..."
