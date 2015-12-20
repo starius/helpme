@@ -14,6 +14,14 @@ sudoedit /etc/locale.conf
 
 uninstall geoclue
 
+fix VPN de-anonymization:
+(see http://habrahabr.ru/post/273523/)
+# sysctl net.ipv4.conf.all.rp_filter=1
+# sysctl net.ipv4.conf.default.rp_filter=1
+# sysctl net.ipv4.conf.tun0.rp_filter=1
+# sysctl net.ipv4.conf.wlp3s0.rp_filter=1
+# ip6tables -t raw -A PREROUTING -m rpfilter --invert -j DROP
+
 Xscreensaver twang can hang, disabling whole screen.
 How to repair without rebooting and restarting X server:
 You should have tmux or other way to run commands in original
