@@ -1643,3 +1643,7 @@ http://wiki.bash-hackers.org/howto/mutex
 luajit: enable profiling
     -jp=v
     see doc/ext_profiler.html
+
+Add Line Numbers:
+$ cat -n foo.txt
+$ nl foo.txt
