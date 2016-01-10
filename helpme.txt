@@ -1647,3 +1647,14 @@ luajit: enable profiling
 Add Line Numbers:
 $ cat -n foo.txt
 $ nl foo.txt
+
+bash conditions example:
+$ foo="foo*"
+$ [[ "foobar" == foo* ]] && echo yes || echo no
+yes
+$ [[ "foobar" == "foo*" ]] && echo yes || echo no
+no
+$ [[ "foobar" == $foo ]] && echo yes || echo no
+yes
+$ [[ "foobar" == "$foo" ]] && echo yes || echo no
+no
