@@ -1658,3 +1658,18 @@ $ [[ "foobar" == $foo ]] && echo yes || echo no
 yes
 $ [[ "foobar" == "$foo" ]] && echo yes || echo no
 no
+
+http://www.getlaura.com/testing-unit-vs-integration-vs-regression-vs-acceptance/
+Testing: Unit vs Integration vs Regression vs Acceptance
+ 1) Unit - You test each individual piece of code.
+     Think each class or method.
+ 2) Integration - You test the integrations of many units together.
+     You make sure your code works when put together, including
+     dependencies, databases and libraries.
+ 3) Regression - After integrating (and maybe fixing) you should run your
+     unit tests again. This is regression testing to ensure that further
+     changes have not broken any units that were already tested. You can
+     run your unit tests again and again for regression testing.
+ 3) Acceptance - You should test that the program works the way
+     a user/customer expects the application to work. Acceptance tests
+     ensure that the functionality meets business requirements.
