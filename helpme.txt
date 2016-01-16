@@ -1496,6 +1496,7 @@ Howto get root on Linux machine:
   * replace "ro" woth "rw"
  * Ctrl-X
 
+How to fix this problem:
 /etc/default/grub
 GRUB_TIMEOUT=0
 
