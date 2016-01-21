@@ -38,3 +38,6 @@ Checkout remote Git branch
 
 Recovering a commit from Github’s Reflog:
 https://objectpartners.com/2014/02/11/recovering-a-commit-from-githubs-reflog/
+
+Git ignore indents in diffs:
+$ git log -p --ignore-all-space
