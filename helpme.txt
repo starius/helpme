@@ -1463,12 +1463,20 @@ Run virtualbox in separate X session:
 $ xinit /usr/bin/virtualbox $* -- :2
 
 x86 assembly:
-https://www.cs.virginia.edu/~evans/cs216/guides/x86.html
+    https://www.cs.virginia.edu/~evans/cs216/guides/x86.html
 x86 registers:
-https://www.cs.virginia.edu/~evans/cs216/guides/x86-registers.png
+    https://www.cs.virginia.edu/~evans/cs216/guides/x86-registers.png
+    https://upload.wikimedia.org/wikipedia/commons/1/15/Table_of_x86_Registers_svg.svg
+    https://en.wikipedia.org/wiki/X86#x86_registers
 x64 assembly:
-https://software.intel.com/en-us/articles/introduction-to-x64-assembly/
-http://www.cs.princeton.edu/courses/archive/spr11/cos217/lectures/15AssemblyFunctions.pdf
+    https://software.intel.com/en-us/articles/introduction-to-x64-assembly/
+    http://www.cs.princeton.edu/courses/archive/spr11/cos217/lectures/15AssemblyFunctions.pdf
+intrinsics:
+    https://software.intel.com/sites/landingpage/IntrinsicsGuide/
+Software developer manuals:
+    http://www.intel.ru/content/www/ru/ru/processors/architectures-software-developer-manuals.html
+Optimization manual:
+    http://www.agner.org/optimize/#manuals
 
 Multitasking:
 Preemptive - system decides when to interrupt a task (OS threads)
