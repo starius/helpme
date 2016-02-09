@@ -577,6 +577,7 @@ valgrind --callgrind to see what is taking CPU
 strace - trace system calls
 ltrace - trace library calls
 perf top -- Performance analysis tools for Linux
+perf stat command -- gather performance counter statistics
 
 За это отвечает параметр swapinnes, чем он больше,
 тем чаще система пишет в своп,
