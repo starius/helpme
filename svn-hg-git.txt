@@ -36,6 +36,9 @@ $ git fetch
 $ git checkout my-branch
 Checkout remote Git branch
 
+Git: SSH remote
+$ git remote add myserver ssh://myserver/home/myuser/myproject
+
 Recovering a commit from Github’s Reflog:
 https://objectpartners.com/2014/02/11/recovering-a-commit-from-githubs-reflog/
 
