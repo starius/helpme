@@ -1509,6 +1509,10 @@ How to fix this problem:
 /etc/default/grub
 GRUB_TIMEOUT=0
 
+nginx switch off logs:
+access_log off;
+error_log /dev/null crit;
+
 How to concatenate Free 90 days COMODO certificates:
 $ cat kiset_org.crt COMODORSADomainValidationSecureServerCA.crt \
     COMODORSAAddTrustCA.crt AddTrustExternalCARoot.crt > all.crt
