@@ -1513,6 +1513,25 @@ nginx switch off logs:
 access_log off;
 error_log /dev/null crit;
 
+nginx detect agent type:
+# https://gist.github.com/calind/1281950
+# agent type detection, based on idea from from http://notnotmobile.appspot.com/
+map $http_user_agent $agent_type_phase1 {
+    default 'mobile';
+    '' 'unknown';
+    ~*iphone|ipod|blackberry|palm|windows\s+ce 'mobile';
+    ~*windows|linux|os\s+[x9]|solaris|bsd 'desktop';
+    ~*spider|crawl|slurp|bot|feedburner 'bot';
+}
+map $http_x_skyfire_phone $agent_type_phase2 {
+    default 'mobile';
+    '' $agent_type_phase1;
+}
+map $http_x_operamini_phone_ua $agent_type {
+    default 'mobile';
+    '' $agent_type_phase2;
+}
+
 How to concatenate Free 90 days COMODO certificates:
 $ cat kiset_org.crt COMODORSADomainValidationSecureServerCA.crt \
     COMODORSAAddTrustCA.crt AddTrustExternalCARoot.crt > all.crt
