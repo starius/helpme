@@ -1516,10 +1516,11 @@ This patch can be useful for running nginx under a regular user.
 $ perl -pi \
     -e 's@/var/log/nginx/@_var_log_nginx/@g;' \
     -e 's@/var/lib/nginx/@_var_lib_nginx/@g;' \
-    -e 's@/var/run/nginx.pid@_var_run/nginx.pid@g' \
+    -e 's@/var/run/nginx.pid@_var_run/nginx.pid@g;' \
+    -e 's@/run/nginx.pid@_run/nginx.pid@g;' \
     < /usr/sbin/nginx > nginx
 $ chmod +x nginx
-$ mkdir _var_log_nginx _var_lib_nginx _var_run
+$ mkdir _var_log_nginx _var_lib_nginx _var_run _run
 $ ./nginx -p . -c nginx.conf
 See also http://stackoverflow.com/questions/18714902/
 
