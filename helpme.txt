@@ -1721,3 +1721,6 @@ Testing: Unit vs Integration vs Regression vs Acceptance
  3) Acceptance - You should test that the program works the way
      a user/customer expects the application to work. Acceptance tests
      ensure that the functionality meets business requirements.
+
+Index of C-API functions by category/tag:
+http://oberon00.github.io/lua-cfuncidx/
