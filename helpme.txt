@@ -1757,3 +1757,29 @@ $ pmap -x <PID>
 
 Stats about memory pages:
 $ cat /proc/meminfo
+
+http://stackoverflow.com/a/6005003
+System zeroes memory before giving it to user processes:
+
+    On any modern operating system, the only way newly obtained
+    memory will contain nonzero values is if memory previously
+    freed by your program got reused by malloc. When new memory
+    is obtained from the operating system (kernel), it is
+    initially purely virtual. It has no physical existence;
+    instead it is mapped as copy-on-write mappings of a single
+    shared memory page that's full of 0 bytes. The first time
+    you attempt to write to it, the kernel will trap the write,
+    allocate a new page of physical memory, copy the contents
+    of the original page (which in this case are all 0 bytes)
+    to the new page, and then resume your program. If the
+    kernel knows the newly allocated physical memory is already
+    zero-filled, it might even be able to optimize out the copy
+    step.
+
+    This procedure is both necessary and efficient. It's
+    necessary because handing over memory that might contain
+    private data from the kernel or another user's processes to
+    your process would be a critical security breach. It's
+    efficient because no zeroing is performed at allocation
+    time; the "zero-filled" pages are just reference to a
+    shared zero page.
