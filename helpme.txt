@@ -1725,3 +1725,35 @@ Testing: Unit vs Integration vs Regression vs Acceptance
 
 Index of Lua C-API functions by category/tag:
 http://oberon00.github.io/lua-cfuncidx/
+
+utilization of hard drive:
+$ iostat -x 1
+
+utilization of CPU, swap and memory:
+$ vmstat 1
+    bi: Blocks received from a block device (blocks/s).
+    bo: Blocks sent to a block device (blocks/s).
+    in: The number of interrupts per second, including the clock.
+    cs: The number of context switches per second.
+    st: Time stolen from a virtual machine.
+$ vmstat --slabs 1
+
+find files opened by the process:
+$ lsof -p <PID>
+
+Performance counter stats (branch misses etc) for process:
+$ perf stat -p <PID>
+
+Find hot functions in the program:
+$ perf top -p <PID>
+
+Trace utilization of hard drive by processeses and processors:
+# btrace /dev/sda
+
+Show all open sockets: netstat, ss.
+
+Show memory mapping of the process (show mmap'ed memory).
+$ pmap -x <PID>
+
+Stats about memory pages:
+$ cat /proc/meminfo
