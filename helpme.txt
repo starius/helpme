@@ -1723,5 +1723,5 @@ Testing: Unit vs Integration vs Regression vs Acceptance
      a user/customer expects the application to work. Acceptance tests
      ensure that the functionality meets business requirements.
 
-Index of C-API functions by category/tag:
+Index of Lua C-API functions by category/tag:
 http://oberon00.github.io/lua-cfuncidx/
