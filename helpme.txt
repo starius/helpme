@@ -1783,3 +1783,10 @@ System zeroes memory before giving it to user processes:
     efficient because no zeroing is performed at allocation
     time; the "zero-filled" pages are just reference to a
     shared zero page.
+
+About random permutations:
+http://www.cs.berkeley.edu/~jfc/cs174/lecs/lec2/lec2.pdf
+
+Complexity of make_heap is linear:
+http://stackoverflow.com/a/9755805
+http://www.cs.umd.edu/~meesh/351/mount/lectures/lect14-heapsort-analysis-part.pdf
