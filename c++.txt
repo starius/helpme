@@ -91,3 +91,5 @@ https://www.securecoding.cert.org/confluence/display/cplusplus/INT02-CPP.+Unders
 
 Null Pointer Dereferencing Causes Undefined Behavior:
 https://software.intel.com/en-us/blogs/2015/04/20/null-pointer-dereferencing-causes-undefined-behavior
+
+inline namespace: http://stackoverflow.com/a/11018418
