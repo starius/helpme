@@ -1793,3 +1793,8 @@ http://www.cs.umd.edu/~meesh/351/mount/lectures/lect14-heapsort-analysis-part.pd
 
 Linux I/O Schedulers:
 https://www.safaribooksonline.com/library/view/linux-system-programming/0596009585/ch04s06.html
+
+Tree of nginx processes:
+$ ps -ef --forest | grep nginx
+    -e     Select all processes.  Identical to -A.
+    -f     Do full-format listing.
