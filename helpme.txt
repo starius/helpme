@@ -1801,3 +1801,6 @@ $ ps -ef --forest | grep nginx
 
 wrk: Modern HTTP benchmarking tool
 https://github.com/wg/wrk
+
+Select N random lines from file:
+$ shuf -n N input > output
