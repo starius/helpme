@@ -1804,3 +1804,6 @@ https://github.com/wg/wrk
 
 Select N random lines from file:
 $ shuf -n N input > output
+
+Google Ngram:
+https://books.google.com/ngrams/graph?content=Linux%2CWindows&year_start=1800&year_end=2000
