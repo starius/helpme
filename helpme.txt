@@ -1484,6 +1484,8 @@ Preemptive - system decides when to interrupt a task (OS threads)
 Cooperative - task itself decides when to interrupt (green threads, coroutines)
 http://www.on-time.com/rtos-32-docs/rtkernel-32/programming-manual/advanced-topics/preemptive-or-cooperative-multitasking.htm
 
+thread confinement = making thread-local data
+
 reprepro -- Debian package repository producer
 Add packages:
 reprepro includedeb wheezy *.deb
