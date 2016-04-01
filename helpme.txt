@@ -1486,6 +1486,8 @@ http://www.on-time.com/rtos-32-docs/rtkernel-32/programming-manual/advanced-topi
 
 thread confinement = making thread-local data
 
+exponential backoff = retry in 1 sec, then in 2 sec, then in 4 sec and so on
+
 reprepro -- Debian package repository producer
 Add packages:
 reprepro includedeb wheezy *.deb
