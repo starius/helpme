@@ -1488,6 +1488,15 @@ thread confinement = making thread-local data
 
 exponential backoff = retry in 1 sec, then in 2 sec, then in 4 sec and so on
 
+concurency:
+    programming pattern
+    multiple threads execute in overlapping time periods
+    possible on single core processor
+parallelism:
+    hardware feature
+    multiple threads execute simultaneously
+    requires multiple cores/processors/GPU
+
 reprepro -- Debian package repository producer
 Add packages:
 reprepro includedeb wheezy *.deb
