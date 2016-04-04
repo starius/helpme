@@ -1492,10 +1492,21 @@ concurency:
     programming pattern
     multiple threads execute in overlapping time periods
     possible on single core processor
-parallelism:
+(true-)parallelism:
     hardware feature
     multiple threads execute simultaneously
     requires multiple cores/processors/GPU
+
+                    concurency     (true-)parallelism
+
+o------o                 -                 -
+        o------o
+
+o--   --  --o            +                 -
+   o--  --   --o
+
+o--------------o         +                 +
+o--------------o
 
 reprepro -- Debian package repository producer
 Add packages:
