@@ -1488,6 +1488,9 @@ thread confinement = making thread-local data
 
 exponential backoff = retry in 1 sec, then in 2 sec, then in 4 sec and so on
 
+in lieu of = instead of
+in favor of = в пользу
+
 concurency:
     programming pattern
     multiple threads execute in overlapping time periods
