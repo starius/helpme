@@ -1511,6 +1511,9 @@ o--   --  --o            +                 -
 o--------------o         +                 +
 o--------------o
 
+Switch to the previous directory:
+$ cd -
+
 reprepro -- Debian package repository producer
 Add packages:
 reprepro includedeb wheezy *.deb
