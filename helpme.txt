@@ -1514,6 +1514,12 @@ o--------------o
 Switch to the previous directory:
 $ cd -
 
+memory regions:
+ * text: code, string literals, constants
+ * stack
+ * bss (block started by symbol)
+ * data = heap
+
 reprepro -- Debian package repository producer
 Add packages:
 reprepro includedeb wheezy *.deb
