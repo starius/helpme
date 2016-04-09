@@ -1821,6 +1821,7 @@ System zeroes memory before giving it to user processes:
     shared zero page.
 
 calloc(nelements, sizeof(element)) - clear alloc, zerros all bytes
+alloca - allocate memory that is automatically freed
 
 About random permutations:
 http://www.cs.berkeley.edu/~jfc/cs174/lecs/lec2/lec2.pdf
