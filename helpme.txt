@@ -1820,6 +1820,8 @@ System zeroes memory before giving it to user processes:
     time; the "zero-filled" pages are just reference to a
     shared zero page.
 
+calloc(nelements, sizeof(element)) - clear alloc, zerros all bytes
+
 About random permutations:
 http://www.cs.berkeley.edu/~jfc/cs174/lecs/lec2/lec2.pdf
 
