@@ -1511,6 +1511,41 @@ o--   --  --o            +                 -
 o--------------o         +                 +
 o--------------o
 
+Problems of event multiplexing interfaces of Linux:
+"open" in non-blocking mode, flag O_NONBLOCK
+  - doesn't block, consumes CPU time
+  - doesn't work with regular files (always ready if not EOF)
+SIGIO signal, flags O_NONBLOCK | O_ASYNC
+  + can be combined with poll to wait on both IO events and signals
+  - doesn't work with regular files (always ready if not EOF)
+select:
+  - limitation of max fd
+  - kernel changes the bitmap, application has to refill
+  - application iterates through all fds
+  - kernel iterates through all fds
+  - doesn't work with regular files (always ready if not EOF)
+poll:
+  + uses array instead of bitmap
+    + solves "limitation of max fd" problem of select
+  + separate fields for input and output
+    + solves "application has to refill" problem of select
+  - application still has to iterates through all fds
+    (because the output is a field, not a separate array)
+  - kernen still terates through all fdsiterates through all fds
+    (to solve this, the fd list has to be moved to kernelspace)
+  - doesn't work with regular files (always ready if not EOF)
+epoll:
+  + moves fd list to kernelspace
+  - requires a system call per each fd update (add/change/del)
+  - works only with files
+  - doesn't work with regular files (forbids adding a regular fd)
+kqueue (FreeBSD):
+  + works with regular files
+  + works with non-file system events
+  + can update many fds and wait for event in a single syscall
+http://www.eecs.berkeley.edu/~sangjin/2012/12/21/epoll-vs-kqueue.html
+http://compgeom.com/~piyush/teach/4531_06/project/hell.html
+
 Switch to the previous directory:
 $ cd -
 
