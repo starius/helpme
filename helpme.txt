@@ -653,6 +653,9 @@ grep reread -A 5 -B 5 -r . -n --color=always|less -R
  * -A, -B after, before
  * \< \> inside pattern: word boundaries
 
+Bit Twiddling Hacks
+http://graphics.stanford.edu/~seander/bithacks.html
+
 If you do not choose an inheritance type, C++ defaults to private inheritance
 
 dpkg -L aptitude -- list of files of aptitude package
