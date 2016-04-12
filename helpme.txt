@@ -1717,6 +1717,8 @@ LC_ALL=C sort
 
 Ctrl + S    console freeze
 Ctrl + Q    console unfreeze
+Ctrl + \    terminate with core dump
+
 
 Upload Travis artifacts to GitHub:
 1. Create new GitHub account
