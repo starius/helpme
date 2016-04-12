@@ -1491,6 +1491,11 @@ thread confinement = making thread-local data
 
 exponential backoff = retry in 1 sec, then in 2 sec, then in 4 sec and so on
 
+underflow = float which is too close to 0.0 to be stored in memory
+For example, if the exponent part can represent values from −127 to 127,
+then a result with a value less than −127 may cause underflow.
+https://en.wikipedia.org/wiki/Arithmetic_underflow
+
 in lieu of = instead of
 in favor of = в пользу
 
