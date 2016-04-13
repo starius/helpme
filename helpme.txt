@@ -1563,6 +1563,12 @@ memory regions:
  * bss (block started by symbol)
  * data = heap
 
+root processes run in ring3, not in ring0
+> Linux on the x86 architecture usually uses Ring0 for kernel (including
+> device drivers) and Ring3 for userspace applications (regerdless of
+> whether they are run by root or another ordinary or privileged user).
+http://unix.stackexchange.com/a/94671
+
 reprepro -- Debian package repository producer
 Add packages:
 reprepro includedeb wheezy *.deb
