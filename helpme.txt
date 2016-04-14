@@ -1569,6 +1569,12 @@ root processes run in ring3, not in ring0
 > whether they are run by root or another ordinary or privileged user).
 http://unix.stackexchange.com/a/94671
 
+Process A can send a signal to process B,
+if at least one of the following is true:
+ * A has CAP_KILL
+ * (A.effective_uid, A.real_uid) intersects (B.real_uid, B.saved_uid)
+ * signal=SIGCONT and A.session == B.session
+
 reprepro -- Debian package repository producer
 Add packages:
 reprepro includedeb wheezy *.deb
