@@ -1904,6 +1904,8 @@ $ shuf -n N input > output
 Google Ngram:
 https://books.google.com/ngrams/graph?content=Linux%2CWindows&year_start=1800&year_end=2000
 
+Approximate Nearest Neighbors: https://github.com/spotify/annoy/
+
 Page faults:
   * minor: the page is in memory, but not marked in MMU as being in memory
   * major: the page is in swap
