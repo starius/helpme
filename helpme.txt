@@ -1786,6 +1786,9 @@ luajit: enable profiling
     -jp=v
     see doc/ext_profiler.html
 
+Build Lua module. Gather all dependencies of Lua module together
+https://github.com/starius/single-dir.lua
+
 Add Line Numbers:
 $ cat -n foo.txt
 $ nl foo.txt
