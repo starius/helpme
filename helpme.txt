@@ -1034,6 +1034,15 @@ reverse engineering:
  * bbe
  * addr2line - address to function name
 
+Display the symbols you can link against:
+$ nm --dynamic
+    $ nm libgtest.so | grep -c ' t '
+    574
+    $ nm --dynamic libgtest.so | grep -c ' t '
+    0
+$ readelf --dyn-syms
+http://stackoverflow.com/a/22401616
+
 keylogger:
 http://code.google.com/p/logkeys/wiki/Documentation#Usage_how-to
  * install logkeys
