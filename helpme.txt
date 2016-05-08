@@ -1798,6 +1798,9 @@ luajit: enable profiling
 Build Lua module. Gather all dependencies of Lua module together
 https://github.com/starius/single-dir.lua
 
+Description of Lua 5.2 bytecode opcodes:
+http://files.catwell.info/misc/mirror/lua-5.2-bytecode-vm-dirk-laurie/lua52vm.html
+
 Add Line Numbers:
 $ cat -n foo.txt
 $ nl foo.txt
