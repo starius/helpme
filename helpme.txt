@@ -1925,3 +1925,10 @@ Page faults:
   * minor: the page is in memory, but not marked in MMU as being in memory
   * major: the page is in swap
   * invalid: the address is not part of the virtual address space
+
+gcov: disable timestamp check
+  for i in *.gcno; do
+    dd if=$i bs=1 skip=8 count=4 of=$(echo $i | sed 's/gcno$/gcda/') seek=8
+  done
+  # See https://coveralls.io/builds/6378481
+  # See https://github.com/starius/luahs/commit/79351b6d5a14f4ebb1185
