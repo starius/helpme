@@ -1932,3 +1932,7 @@ gcov: disable timestamp check
   done
   # See https://coveralls.io/builds/6378481
   # See https://github.com/starius/luahs/commit/79351b6d5a14f4ebb1185
+
+If you want lines X to Y inclusive (starting the numbering at 1), use
+$ tail -n +$X /path/to/file | head -n $((Y-X+1))
+http://unix.stackexchange.com/a/47424
