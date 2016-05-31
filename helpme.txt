@@ -1866,6 +1866,9 @@ $ pmap -x <PID>
 Stats about memory pages:
 $ cat /proc/meminfo
 
+Log memory usage by a process:
+$ pidstat -r -C tool-name 1
+
 http://stackoverflow.com/a/6005003
 System zeroes memory before giving it to user processes:
 
