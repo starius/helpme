@@ -964,6 +964,10 @@ http://www.yolinux.com/TUTORIALS/LibraryArchives-StaticAndDynamic.html
 If you want to link libapplejuice statically, but not liborangejuice:
 gcc *.o -Wl,-Bstatic -lapplejuice -Wl,-Bdynamic -lorangejuice -o binary
 
+How to see which flags -march=native will activate:
+$ gcc -march=native -Q --help=target
+http://stackoverflow.com/a/5470379
+
 http://www.gnupg.org/gph/en/manual.html
  * gpg --gen-key
  * gpg --fingerprint
