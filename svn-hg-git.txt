@@ -23,6 +23,11 @@ SVN get current revision:
 $ svn info | grep "Revision" | awk '{print $2}'
 http://stackoverflow.com/a/1991555
 
+SVN partial checkout:
+$ svn checkout --depth empty svn+ssh://host/repo
+$ cd repo
+$ svn up --set-depth empty subdir
+
 List all the files for a commit in Git:
 $ git ls-tree -r --name-only <commit>
 
