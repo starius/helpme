@@ -226,6 +226,11 @@ tar -c --exclude=*.ent GeometricalCore_v16 | gzip > 16.tar
 
 find -iname '*.mp3' > 1.m3u
 
+Add -prune to `find` if you rename or remove found directories.
+Example: https://github.com/mxe/mxe/pull/1390
+Option -prune prevents `find` from entering renamed/removed dir.
+http://unix.stackexchange.com/a/115869
+
 выполнить скрипт и открыть питон в интерактивном режиме
     python -i file.py
 
