@@ -1948,3 +1948,6 @@ gcov: disable timestamp check
 If you want lines X to Y inclusive (starting the numbering at 1), use
 $ tail -n +$X /path/to/file | head -n $((Y-X+1))
 http://unix.stackexchange.com/a/47424
+
+Go enable verbose mode:
+$ go build -x ...
