@@ -1951,3 +1951,7 @@ http://unix.stackexchange.com/a/47424
 
 Go enable verbose mode:
 $ go build -x ...
+
+Link go statically:
+$ go build --ldflags '-extldflags "-static"'
+http://blog.hashbangbash.com/2014/04/linking-golang-statically/
