@@ -1959,3 +1959,9 @@ http://blog.hashbangbash.com/2014/04/linking-golang-statically/
 Go download test dependencies:
 $ go get -t github.com/flier/gohs/hyperscan
 $ go test github.com/flier/gohs/hyperscan
+
+Bash:
+    Remove first argument:
+    $ shift
+    Opposite to shift: ( https://lists.gnu.org/archive/html/help-bash/2012-02/msg00030.html )
+    $ set ... "$@"
