@@ -1516,6 +1516,7 @@ https://en.wikipedia.org/wiki/Arithmetic_underflow
 
 in lieu of = instead of
 in favor of = в пользу
+boils down to = сводится к
 
 concurency:
     programming pattern
