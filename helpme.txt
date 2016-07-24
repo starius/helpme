@@ -170,6 +170,13 @@ $ arp -na
 способ убить процессы по имени:
   ps -A | grep app.wt | awk '{print $1}' | xargs kill
 
+Run commands in parallel:
+$ find . -name '*.jpg' -print0 | xargs -0 -P 4 -I % convert % %.png
+    -print0 and -0 are needed to use 0x00 as a separator
+    -P 4 tells xargs to run up to 4 jobs in parallel
+    -I % tells xargs to substitute % with input
+http://offbytwo.com/2011/06/26/things-you-didnt-know-about-xargs.html
+
 обновить программы (менеджер обновлений):
   /usr/bin/update-manager
 
