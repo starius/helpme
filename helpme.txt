@@ -1140,6 +1140,12 @@ watch: re-run a command each %f seconds
 
 sshfs -o transform_symlinks
 
+sshfs: fix freeze on network problems:
+~/.ssh/config:
+    Host *
+    ServerAliveInterval 5
+$ sshfs -o reconnect
+
 Daemon is inhibited: sudo killall udisks; sudo killall udisks-daemon
 
 Get rid of default google search engine:
