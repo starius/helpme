@@ -93,3 +93,12 @@ Null Pointer Dereferencing Causes Undefined Behavior:
 https://software.intel.com/en-us/blogs/2015/04/20/null-pointer-dereferencing-causes-undefined-behavior
 
 inline namespace: http://stackoverflow.com/a/11018418
+
+Operators which cannot be overloaded
+  * ?: (conditional)
+  * . (member selection)
+  * .* (member selection with pointer-to-member)
+  * :: (scope resolution)
+  * sizeof (object size information)
+  * typeid (object type information)
+https://en.wikibooks.org/wiki/C%2B%2B_Programming/Operators/Operator_Overloading#Operators_which_cannot_be_overloaded
