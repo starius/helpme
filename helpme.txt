@@ -1689,6 +1689,12 @@ Add to /etc/nginx/nginx.conf:
         ssl_session_cache shared:SSL:10m;
         ssl_session_timeout 10m;
 
+Generate RSA private key:
+$ openssl genrsa -out private.pem 4096
+
+RSA private key to public key:
+$ openssl rsa -in private.pem -outform PEM -pubout -out public.pem
+
 Print SSL key info:
 $ openssl rsa -in file.key -text -noout
 
