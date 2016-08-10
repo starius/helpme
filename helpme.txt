@@ -922,6 +922,9 @@ Dark web = onion/i2p sites.
 Deep web = not indexed by search engines like Google.
 https://www.ibtimes.co.uk/interpol-cryptocurrency-fight-bitcoin-crimes-dark-web-1518264
 
+Tor hidden service descriptor or public key => onion address:
+https://gist.github.com/DonnchaC/d6428881f451097f329e
+
 fix ssh connect lag after debug1: SSH2_MSG_SERVICE_ACCEPT received
 $ vi /etc/ssh/sshd_config
 UseDNS no
