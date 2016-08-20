@@ -1589,6 +1589,10 @@ kqueue (FreeBSD):
 http://www.eecs.berkeley.edu/~sangjin/2012/12/21/epoll-vs-kqueue.html
 http://compgeom.com/~piyush/teach/4531_06/project/hell.html
 
+wait for events with file/directory:
+$ sudo apt-get install inotify-tools
+$ inotifywait /tmp
+
 Switch to the previous directory:
 $ cd -
 
