@@ -1005,8 +1005,13 @@ http://www.gnupg.org/gph/en/manual.html
    and to import them again:
     gpg --import secret.key
 GPG cheatsheet http://irtfweb.ifa.hawaii.edu/~lockhart/gpg/gpg-cs.html
-GPG encrypt and sign:
-$ gpg --armor --encrypt --sign -r alice@alice.com file.txt
+GPG encrypt and sign (Bob to Alice):
+$ gpg \
+    --recipient alice@alice.com \
+    --sign-with bob@bob.com \
+    --output file.txt.asc \
+    --armor \
+    --encrypt file.txt
 
 create debian packages:
  * https://wiki.ubuntu.com/PackagingGuide/Complete
