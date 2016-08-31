@@ -1008,6 +1008,7 @@ GPG cheatsheet http://irtfweb.ifa.hawaii.edu/~lockhart/gpg/gpg-cs.html
 GPG encrypt and sign (Bob to Alice):
 $ gpg \
     --recipient alice@alice.com \
+    --sign \
     --sign-with bob@bob.com \
     --output file.txt.asc \
     --armor \
