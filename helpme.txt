@@ -1711,7 +1711,7 @@ Print SSL key info:
 $ openssl rsa -in file.key -text -noout
 
 Generate a certificate signing request (CSR) for an existing private key
-$ openssl req -out CSR.csr -sha256 -key privateKey.key -new
+$ openssl req -out request.csr -sha256 -key private.pem -new -subj "/CN=example.com"
 
 awk tabs:
 $ awk -F $'\t'
