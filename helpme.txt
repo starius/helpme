@@ -1713,6 +1713,9 @@ $ openssl rsa -in file.key -text -noout
 Generate a certificate signing request (CSR) for an existing private key
 $ openssl req -out request.csr -sha256 -key private.pem -new -subj "/CN=example.com"
 
+Generate self-signed SSL certificate:
+$ openssl x509 -req -sha256 -days 3650 -in request.csr -signkey private.pem -out cert.crt
+
 awk tabs:
 $ awk -F $'\t'
 
