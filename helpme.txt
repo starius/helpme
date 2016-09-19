@@ -278,6 +278,9 @@ wget -r -k -p -np -e robots=off -E --no-check-certificate http://kodomo.fbb.msu.
 -U - агент (браузер)
     Mozilla/5.0 (X11; U; Linux i686; ru; rv:1.9.2.3) Gecko/20100423 Ubuntu/10.04 (lucid) Firefox/3.6.3
 
+Measuring download speed from command line:
+$ curl -o /dev/null http://speedtest.wdc01.softlayer.com/downloads/test10.zip
+
 computertemp. + добавить на панель гнома
 hddtemp
 powertop - контроль энергопотребления и подстройка для снжения температуры
