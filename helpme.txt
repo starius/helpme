@@ -1535,6 +1535,8 @@ http://www.on-time.com/rtos-32-docs/rtkernel-32/programming-manual/advanced-topi
 thread confinement = making thread-local data
 
 exponential backoff = retry in 1 sec, then in 2 sec, then in 4 sec and so on
+Exponential Backoff And Jitter:
+    https://www.awsarchitectureblog.com/2015/03/backoff.html
 
 underflow = float which is too close to 0.0 to be stored in memory
 For example, if the exponent part can represent values from −127 to 127,
