@@ -44,3 +44,9 @@ r_overbrightbits 1 (either 1 or 0)
 cg_marks "0" no railgun traces on walls
 scr_conspeed "100" instant console
 
+Change your name by editing q3config.cfg directly
+(it's useful if you want to use special characters):
+change `seta name` field in the following files:
+* ~/.openarena/baseoa/q3config.cfg
+* ~/.openarena/CTF/q3config.cfg
+* ~/.openarena/fq3-ctf/q3config.cfg
