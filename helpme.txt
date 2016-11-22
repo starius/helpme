@@ -1284,6 +1284,8 @@ mediainfo - best reader of metainfo (debian 7+)
 extract - another reader of metainfo
 ffmpeg -i in.mp4 -acodec copy -vcodec copy out.mp4    (removes most of metadata)
 
+mencoder in.mkv -oac mp3lame -ovc x264 -ss 00:00 -endpos 01:14 -o out.mp4
+
 convert -auto-orient
 convert -contrast-stretch '5x20%'
 
