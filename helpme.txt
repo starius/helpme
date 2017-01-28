@@ -1833,6 +1833,9 @@ http://stackoverflow.com/q/25916249/1293417
 Add search.disconnect.me to normal Firefox:
 https://addons.mozilla.org/en-us/firefox/addon/disconnectsearch/
 
+Old Firefox - don't close Tabs on Ctrl-W
+https://support.mozilla.org/en-US/kb/keyboard-shortcuts-perform-firefox-tasks-quickly
+
 Windows batch file to build Lua from source:
 https://github.com/Tieske/luawinmake
 
