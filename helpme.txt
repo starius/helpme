@@ -1836,6 +1836,9 @@ https://addons.mozilla.org/en-us/firefox/addon/disconnectsearch/
 Old Firefox - don't close Tabs on Ctrl-W
 https://support.mozilla.org/en-US/kb/keyboard-shortcuts-perform-firefox-tasks-quickly
 
+Disable cache in browser:
+F12, Network tab, checkbox "disable cache"
+
 Windows batch file to build Lua from source:
 https://github.com/Tieske/luawinmake
 
