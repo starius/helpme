@@ -1549,6 +1549,7 @@ in lieu of = instead of
 in favor of = в пользу
 boils down to = сводится к
 on the table = на повестке дня
+not that I ... = не то чтобы я ...
 
 concurency:
     programming pattern
