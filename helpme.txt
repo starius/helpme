@@ -934,6 +934,9 @@ fix ssh connect lag after debug1: SSH2_MSG_SERVICE_ACCEPT received
 $ vi /etc/ssh/sshd_config
 UseDNS no
 
+Change SSH options on the fly: [Enter] [Tilde] [shift+C]
+http://superuser.com/a/960859
+
 cron + tmux + irssi:
 @reboot tmux new -d irssi
 
