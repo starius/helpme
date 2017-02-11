@@ -1295,6 +1295,10 @@ convert -contrast-stretch '5x20%'
 How to produce PNG file without offset information when cropping:
 $ convert in.png -crop wxh+x+y +repage out.png
 
+Make animated GIF:
+$ convert -delay 120 -loop 0 *.png animated.gif
+http://www.linux-magazine.com/Online/Blogs/Productivity-Sauce/Create-Animated-GIFs-with-ImageMagick
+
 tar --numeric-owner
 mat
 test: tar -tvf 1.tar.gz
