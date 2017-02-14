@@ -49,3 +49,6 @@ https://objectpartners.com/2014/02/11/recovering-a-commit-from-githubs-reflog/
 
 Git ignore indents in diffs:
 $ git log -p --ignore-all-space
+
+Git resolve conflicts in `am`:
+$ git am -3 1.patch
