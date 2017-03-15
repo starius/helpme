@@ -2025,4 +2025,4 @@ Bash:
     Remove first argument:
     $ shift
     Opposite to shift: ( https://lists.gnu.org/archive/html/help-bash/2012-02/msg00030.html )
-    $ set ... "$@"
+    $ set new-first-arg "$@"
