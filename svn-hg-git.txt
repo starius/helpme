@@ -46,6 +46,7 @@ $ git remote add myserver ssh://myserver/home/myuser/myproject
 
 Recovering a commit from Github’s Reflog:
 https://objectpartners.com/2014/02/11/recovering-a-commit-from-githubs-reflog/
+$ git reflog
 
 Git ignore indents in diffs:
 $ git log -p --ignore-all-space
