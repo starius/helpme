@@ -1264,7 +1264,11 @@ thread_name=CAKcBokumm95_xHnTrJ_qFA_HJ_dURGZyS2KUmmjbnUeKVzXtdw%40mail.gmail.com
 Debian forward all IP traffic through SOCKS proxy:
     http://linuxaria.com/article/redirect-all-tcp-traffic-through-transparent-socks5-proxy-in-linux?lang=en
 
-sg - execute command as different group ID
+Switching process group to a secondary group:
+    Run child bash with the group:
+        $ newgrp thegroup
+    Run a command with the group:
+        $ sg thegroup 'the command'
 
 haproxy agains DoS: http://haproxy.1wt.eu/download/1.3/examples/antidos.cfg
 
