@@ -702,6 +702,9 @@ mplayer:
 vlc external file:
 $ vlc video.mkv --input-slave audio.mka
 
+Start minimized vlc playing the internet radio:
+$ vlc --qt-start-minimized http://64.71.79.181:8024/ &
+
 Merge audio and video mkv:
 $ mkvmerge -D audio.avi -A video.avi -o mymovie.mkv
 
