@@ -1,0 +1,5 @@
+https://askubuntu.com/a/99960
+
+pacmd load-module module-remap-sink sink_name=mono master=$(pacmd list-sinks | grep -m 1 -oP 'name:\s<\K.*(?=>)') channels=2 channel_map=mono,mono
+
+In Sound Preferences choose "Mono" as the output
