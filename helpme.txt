@@ -301,6 +301,9 @@ Conclusion : Results suggest that, for these tasks, filesystems can be regrouped
     appears as a good compromise, with relatively quick results, moderate usage of CPU and acceptable
     rate of page faults.
 
+How To Free Reserved Space On EXT4 Partitions:
+$ sudo tune2fs -m 1 /dev/sdb1
+
 сделать geany стандартным текстовым редактором
     в ~/.local/share/applications/defaults.list
     добавляем строки
