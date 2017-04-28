@@ -917,6 +917,7 @@ Change passphrase of the ssh private key:
  $ ssh-keygen -p
 Show fingerprint of SSH server:
  $ ssh-keygen -l -f /etc/ssh/ssh_host_rsa_key.pub
+ $ ssh-keygen -l -f /etc/ssh/ssh_host_rsa_key.pub -E md5
 ssh-agent + tmux:
  $ screen
  $ ssh-agent tmux  [inside screen]
