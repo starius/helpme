@@ -926,8 +926,8 @@ Close window (do not detach tmux)
  $ ssh-add         [inside tmux]
 
 SSH through tor/onion:
--o ProxyCommand="/bin/nc -X 5 -x localhost:9050 %h %p"
-ProxyCommand /bin/nc -X 5 -x localhost:9050 %h %p
+-o ProxyCommand="/bin/nc -X 5 -x 127.0.0.1:9050 %h %p"
+ProxyCommand /bin/nc -X 5 -x 127.0.0.1:9050 %h %p
 apt-get install netcat-openbsd
 
 Dark web = onion/i2p sites.
