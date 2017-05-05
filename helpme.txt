@@ -2032,3 +2032,6 @@ Bash:
     $ shift
     Opposite to shift: ( https://lists.gnu.org/archive/html/help-bash/2012-02/msg00030.html )
     $ set new-first-arg "$@"
+
+Do not respond on DDoS attack with the source port 80:
+$ sudo iptables -A INPUT -p tcp -m tcp --sport 80 -j DROP
