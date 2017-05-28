@@ -947,6 +947,10 @@ http://superuser.com/a/960859
 cron + tmux + irssi:
 @reboot tmux new -d irssi
 
+tmux attach - no sessions:
+$ killall -s SIGUSR1 tmux
+https://blog.srvbox.com/tmux-attach-no-sessions-quick-fix/
+
 Sleep until next occurrence of specific time
     difference=$(($(date -d "4:00" +%s) - $(date +%s)))
     if [ $difference -lt 0 ]; then
