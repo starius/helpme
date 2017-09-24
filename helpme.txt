@@ -1275,7 +1275,7 @@ Switching process group to a secondary group:
     Run a command with the group:
         $ sg thegroup 'the command'
 
-haproxy agains DoS: http://haproxy.1wt.eu/download/1.3/examples/antidos.cfg
+haproxy against DoS: http://haproxy.1wt.eu/download/1.3/examples/antidos.cfg
 
 redirect TCP connection (userspace):
 rinetd
