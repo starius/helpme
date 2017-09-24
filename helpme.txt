@@ -1568,6 +1568,7 @@ on the table = на повестке дня
 not that I ... = не то чтобы я ...
 spare the details = избавить от излишних подробностей
 at any rate = во всяком случае
+downplay = underestimate
 
 concurency:
     programming pattern
