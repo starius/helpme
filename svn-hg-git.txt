@@ -53,3 +53,6 @@ $ git log -p --ignore-all-space
 
 Git resolve conflicts in `am`:
 $ git am -3 1.patch
+
+Git show deletions in red and additions in green:
+$ git diff --color-words=.
