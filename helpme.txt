@@ -1407,6 +1407,15 @@ two real Ethernet devices to it
 How To Set Up A Tor Middlebox Routing All VirtualBox Virtual Machine Traffic Over The Tor Network
 http://www.howtoforge.com/how-to-set-up-a-tor-middlebox-routing-all-virtualbox-virtual-machine-traffic-over-the-tor-network
 
+VirtualBox in Qubes:
+dom0$ qvm-create vbox --hvm --label red
+dom0$ qvm-start vbox --cdrom=[other-vm]:/path/to/debian.iso
+    install
+vbox$ sudo dpkg -i virtualbox.deb
+vbox$ sudoedit /usr/lib/virtualbox/vboxdrv.sh
+    find "xen" and disable the check
+vbox$ sudo aptitude install
+
 pulseaudio for multiple users on Debian:
 $ pulseaudio --kill
 # pulseaudio --system -D
