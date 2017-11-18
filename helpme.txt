@@ -919,7 +919,7 @@ Show fingerprint of SSH server:
  $ ssh-keygen -l -f /etc/ssh/ssh_host_rsa_key.pub
  $ ssh-keygen -l -f /etc/ssh/ssh_host_rsa_key.pub -E md5
 Extract fingerprint from .ssh/known_hosts:
- $ ssh-keygen -l -f ~/.ssh/known_hosts -F server
+ $ ssh-keygen -l -f ~/.ssh/known_hosts -F [1.1.1.1]:2222
  2048 c2:e7:c0:9f:cd:c8:54:88:ac:b3:6b:a6:51:73:2b:e3 server (RSA)
 ssh-agent + tmux:
  $ screen
