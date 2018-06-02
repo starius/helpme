@@ -1595,6 +1595,7 @@ not that I ... = не то чтобы я ...
 spare the details = избавить от излишних подробностей
 at any rate = во всяком случае
 downplay = underestimate
+at the point of a gun = под дулом пистолета
 
 concurency:
     programming pattern
