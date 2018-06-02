@@ -1419,6 +1419,20 @@ vbox$ sudoedit /usr/lib/virtualbox/vboxdrv.sh
     find "xen" and disable the check
 vbox$ sudo aptitude install
 
+Create new DispVM in Qubes:
+$ qvm-create-default-dvm debian-9 --default-script
+
+Change keyboard layout change shortcut in Qubes:
+/etc/X11/xorg.conf.d/00-keyboard.conf
+See possible valuers in /usr/share/X11/xkb/rules/base.lst
+
+Qubes, Windows is stuck on "Starting windows":
+cp /var/lib/qubes/appvms/windows7/windows7.conf ~/
+vim ~/windows7.conf
+-> change xen by cirrus at the bottom
+qvm-start windows7 --custom-config=~/windows7.conf
+https://github.com/QubesOS/qubes-issues/issues/2467#issuecomment-263908864
+
 pulseaudio for multiple users on Debian:
 $ pulseaudio --kill
 # pulseaudio --system -D
