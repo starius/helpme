@@ -1596,6 +1596,7 @@ spare the details = избавить от излишних подробност�
 at any rate = во всяком случае
 downplay = underestimate
 at the point of a gun = под дулом пистолета
+to rock the boat = раскачивать лодку
 
 concurency:
     programming pattern
